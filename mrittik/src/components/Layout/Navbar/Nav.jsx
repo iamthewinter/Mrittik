@@ -5,14 +5,14 @@ import { Icon } from "@iconify/react";
 const Nav = () => {
   return (
     <nav>
-      <div className="container">
-        <div className="row px-5 justify-content-between text-align-center">
-          <div className="col-xl-2">
+      <div className="container px_5">
+        <div className="row px_5 justify-content-between align-items-center">
+          <div className="col-xl-2 col-lg-2 col-6 px-0 media576">
             <div className="logo">
               <img src={Logo} alt="" />
             </div>
           </div>
-          <div className="col-xl-7">
+          <div className="col-xl-7 col-lg-7 px-0 midnav_none">
             <div className="col_adapter">
               <ul>
                 <li>
@@ -37,13 +37,16 @@ const Nav = () => {
               </ul>
             </div>
           </div>
-          <div className="col-xl-2">
+          <div className="col-xl-2 col-lg-2 col-6 px-0 media576">
             <div className="right_nav">
               <button className="info_popup">
                 <Icon icon="ri:menu-3-fill" />
               </button>
               <div className="nav_search">
                 <Icon icon="bi:search" />
+              </div>
+              <div className="menu_bars">
+                <Icon icon="ic:baseline-menu" />
               </div>
             </div>
           </div>

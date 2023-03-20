@@ -7,6 +7,7 @@ body {
   font-family: $second_font !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $text_color_dark1 !important;
 }
 
 code {
@@ -14,7 +15,7 @@ code {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -22,9 +23,9 @@ code {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #2e2e2e;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #2e2e2e;
 }

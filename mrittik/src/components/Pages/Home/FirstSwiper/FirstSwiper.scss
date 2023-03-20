@@ -1,0 +1,47 @@
+@import "../../../../Scss/variable";
+
+.first_section {
+  background-color: $back_color1;
+  padding: 170px 0 170px 0;
+  position: relative;
+
+  .section_under {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+    .col_adaptation {
+      height: 100%;
+      width: 100%;
+      border-right: 1px solid rgb(221, 221, 221);
+    }
+    .brdr_left {
+      border-left: 1px solid rgb(221, 221, 221);
+    }
+  }
+
+  .section_on {
+    .slider_inner {
+      .slider_img {
+        width: 87%;
+        position: relative;
+        img {
+          width: 100%;
+        }
+        .image_card {
+          position: absolute;
+          top: 30%;
+          left: 94%;
+          padding: 20px 30px;
+          background-color: $text_color_dark2;
+          h4 {
+            color: $text_white;
+          }
+        }
+      }
+    }
+  }
+}
