@@ -1,0 +1,18 @@
+@import "./Scss/variable";
+
+.App {
+  .cursor {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 1100;
+    background-color: #a6a182;
+  }
+}

@@ -46,7 +46,7 @@ const Nav = () => {
                 <Icon icon="bi:search" />
               </div>
               <div className="menu_bars">
-                <Icon icon="ic:baseline-menu" />
+                <Icon icon="ri:menu-fill" />
               </div>
             </div>
           </div>
