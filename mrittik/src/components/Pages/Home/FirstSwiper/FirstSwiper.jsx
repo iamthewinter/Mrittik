@@ -1,12 +1,28 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 import "../FirstSwiper/FirstSwiper.scss";
-import { Icon } from "@iconify/react";
+import VanillaTilt from "vanilla-tilt";
+// import { Icon } from "@iconify/react";
+
+function Tilt(props) {
+  const { options, ...rest } = props;
+  const tilt = useRef(null);
+
+  useEffect(() => {
+    VanillaTilt.init(tilt.current, options);
+  }, [options]);
+
+  return <div ref={tilt} {...rest} />;
+}
 const FirstSwiper = () => {
+  const options = {
+    speed: 2000,
+    max: 20,
+  };
   return (
     <section className="first_section">
       <div className="section_under">
@@ -56,7 +72,7 @@ const FirstSwiper = () => {
                         src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/slider/14.jpg"
                         alt=""
                       />
-                      <div className="image_card">
+                      <Tilt className="image_card" options={options}>
                         <h6>CONDOMINIUM</h6>
                         <h4>Montana young menz club in the city center</h4>
                         <div className="details_link">
@@ -67,7 +83,7 @@ const FirstSwiper = () => {
                             <span className="dot"></span>
                           </span>
                         </div>
-                      </div>
+                      </Tilt>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -78,7 +94,7 @@ const FirstSwiper = () => {
                         src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/slider/5.jpg"
                         alt=""
                       />
-                      <div className="image_card">
+                      <Tilt className="image_card" options={options}>
                         <h6>CONDOMINIUM</h6>
                         <h4>California winter condominium</h4>
                         <div className="details_link">
@@ -89,7 +105,7 @@ const FirstSwiper = () => {
                             <span className="dot"></span>
                           </span>
                         </div>
-                      </div>
+                      </Tilt>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -100,7 +116,7 @@ const FirstSwiper = () => {
                         src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/slider/8.jpg"
                         alt=""
                       />
-                      <div className="image_card">
+                      <Tilt className="image_card" options={options}>
                         <h6>CONDOMINIUM</h6>
                         <h4>Find your own self invintage lake house</h4>
                         <div className="details_link">
@@ -111,7 +127,7 @@ const FirstSwiper = () => {
                             <span className="dot"></span>
                           </span>
                         </div>
-                      </div>
+                      </Tilt>
                     </div>
                   </div>
                 </SwiperSlide>

@@ -46,38 +46,57 @@
     0% {
       transform: scaleX(1);
     }
+
     50% {
       transform: scaleX(0);
     }
+
     100% {
       transform: scaleX(1);
     }
   }
+
   @keyframes rotateAnim {
     100% {
       transform: rotate(360deg);
     }
   }
+
   @keyframes scaleAnim2 {
     0% {
       transform: translate(-50%, -50%) scale(1);
     }
+
     50% {
       transform: translate(-50%, -50%) scale(0.8);
       background: $text_white;
     }
+
     100% {
       transform: translate(-50%, -50%) scale(1);
     }
   }
+
   .line {
     animation: scaleAnim1 2s infinite linear;
   }
+
   .circle {
     animation: rotateAnim 7s infinite linear;
     border-style: dashed;
   }
+
   .dot {
     animation: scaleAnim2 2s infinite ease-in-out;
   }
+}
+
+%third_li {
+  font-size: 0.6875rem;
+  padding: 0.625rem 0rem;
+  width: 100%;
+  line-height: 0.875rem;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
 }
