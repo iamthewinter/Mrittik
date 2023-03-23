@@ -5,6 +5,8 @@ import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 const Nav = () => {
   const [show, setShow] = useState(false);
+  const [scale, setScale] = useState(false);
+  const [translate, setTranslate] = useState(false);
   return (
     <nav>
       <div className="container px_5">
@@ -170,7 +172,7 @@ const Nav = () => {
           </div>
           <div className="col-xl-2 col-lg-2 col-6 px-0 media576">
             <div className="right_nav">
-              <button className="info_popup">
+              <button className="info_btn" onClick={() => setScale(!scale)}>
                 <Icon icon="ri:menu-3-fill" />
               </button>
               <div className="nav_search" onClick={() => setShow(!show)}>
@@ -184,11 +186,81 @@ const Nav = () => {
                   </button>
                 </form>
               </div>
-              <div className="menu_bars">
+              <div
+                className="menu_bars"
+                onClick={() => setTranslate(!translate)}
+              >
                 <Icon icon="ri:menu-fill" />
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div
+        className={
+          scale ? "information_window active_info" : "information_window"
+        }
+      >
+        <div className="close_field" onClick={() => setScale(!scale)}>
+          <Icon icon="bytesize:close" />
+        </div>
+        <div className="logo_field">
+          <div className="info_logo">
+            <img
+              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/logo-dark-lg.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="info_texts">
+          <p>
+            Mrittik Architects is a full-service design firm providing
+            architecture architecture.
+          </p>
+        </div>
+      </div>
+      <div
+        className={translate ? "mobile_nav_menu showing" : "mobile_nav_menu"}
+      >
+        <div className="menu_head">
+          <div className="close_btn"></div>
+          <div className="big_logo">
+            <img
+              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/logo-dark-lg.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="menu_pannel">
+          <ul className="mobile_list">
+            <li className="mobile_li">
+              <div className="link_place">Home</div>
+              <span className="link_span">
+                <Icon icon="bi:chevron-right" />
+              </span>
+            </li>
+            <li className="mobile_li">
+              <div className="link_place">Gallery</div>
+              <span className="link_span">
+                <Icon icon="bi:chevron-right" />
+              </span>
+            </li>
+            <li className="mobile_li">
+              <div className="link_place">Pages</div>
+              <span className="link_span">
+                <Icon icon="bi:chevron-right" />
+              </span>
+            </li>
+            <li className="mobile_li">
+              <div className="link_place">Contacts</div>
+            </li>
+            <li className="mobile_li">
+              <div className="link_place">Blog</div>
+              <span className="link_span">
+                <Icon icon="bi:chevron-right" />
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
