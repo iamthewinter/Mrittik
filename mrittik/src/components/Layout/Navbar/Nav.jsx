@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../../assets/logo-dark.svg";
 import "../Navbar/Nav.scss";
 import { Icon } from "@iconify/react";
@@ -7,6 +7,19 @@ const Nav = () => {
   const [show, setShow] = useState(false);
   const [scale, setScale] = useState(false);
   const [translate, setTranslate] = useState(false);
+  const [carousel1, setCarousel1] = useState(false);
+  const [carousel2, setCarousel2] = useState(false);
+  const [carousel3, setCarousel3] = useState(false);
+  const [carousel4, setCarousel4] = useState(false);
+
+  // useEffect(()=>{
+  //   const handler = (e)=>{
+  //       if (e.target) {
+  //         setTranslate(false)
+  //       }
+  //   }
+  //   document.addEventListener("mousedown", handler)
+  // })
   return (
     <nav>
       <div className="container px_5">
@@ -212,18 +225,49 @@ const Nav = () => {
             />
           </div>
         </div>
+        <p>
+          Mrittik Architects is a full-service design firm providing
+          architecture architecture.
+        </p>
         <div className="info_texts">
+          <h5>Contact Info</h5>
+          <p>+123 456 789 33</p>
           <p>
-            Mrittik Architects is a full-service design firm providing
-            architecture architecture.
+            3 Madison Street, NY
+            <br />
+            United States of America
           </p>
+          <p>mrittikarch@gmail.com</p>
+          <h5>Office Address</h5>
+          <p>
+            +Time Square, New York
+            <br />
+            USA, 3454
+          </p>
+          <ul className="social_media">
+            <li className="socialsite">
+              <Icon icon="mdi:facebook" />
+            </li>
+            <li className="socialsite">
+              <Icon icon="mdi:twitter" />
+            </li>
+            <li className="socialsite">
+              <Icon icon="mdi:instagram" />
+            </li>
+            <li className="socialsite">
+              <Icon icon="mdi:youtube" />
+            </li>
+          </ul>
         </div>
       </div>
       <div
         className={translate ? "mobile_nav_menu showing" : "mobile_nav_menu"}
       >
         <div className="menu_head">
-          <div className="close_btn"></div>
+          <div
+            className="close_btn"
+            onClick={() => setTranslate(!translate)}
+          ></div>
           <div className="big_logo">
             <img
               src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/logo-dark-lg.svg"
@@ -232,22 +276,37 @@ const Nav = () => {
           </div>
         </div>
         <div className="menu_pannel">
-          <ul className="mobile_list">
+          <ul
+            className={
+              carousel1 || carousel2 || carousel3 || carousel4
+                ? "mobile_list replace"
+                : "mobile_list"
+            }
+          >
             <li className="mobile_li">
               <div className="link_place">Home</div>
-              <span className="link_span">
+              <span
+                className="link_span"
+                onClick={() => setCarousel1(!carousel1)}
+              >
                 <Icon icon="bi:chevron-right" />
               </span>
             </li>
             <li className="mobile_li">
               <div className="link_place">Gallery</div>
-              <span className="link_span">
+              <span
+                className="link_span"
+                onClick={() => setCarousel2(!carousel2)}
+              >
                 <Icon icon="bi:chevron-right" />
               </span>
             </li>
             <li className="mobile_li">
               <div className="link_place">Pages</div>
-              <span className="link_span">
+              <span
+                className="link_span"
+                onClick={() => setCarousel3(!carousel3)}
+              >
                 <Icon icon="bi:chevron-right" />
               </span>
             </li>
@@ -256,9 +315,116 @@ const Nav = () => {
             </li>
             <li className="mobile_li">
               <div className="link_place">Blog</div>
-              <span className="link_span">
+              <span
+                className="link_span"
+                onClick={() => setCarousel4(!carousel4)}
+              >
                 <Icon icon="bi:chevron-right" />
               </span>
+            </li>
+          </ul>
+          <ul className={carousel1 ? "mobile_lvl2 moving" : "mobile_lvl2"}>
+            <li
+              className="mobile_lvl2_head"
+              onClick={() => setCarousel1(!carousel1)}
+            >
+              <div className="icon_return">
+                <Icon icon="bi:chevron-left" />
+              </div>
+              <div className="lvl_name">HOME</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Home One</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Home Two</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Home Three</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Home Four</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Home Five</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Home Six</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Home Seven</div>
+            </li>
+          </ul>
+          <ul className={carousel2 ? "mobile_lvl2 moving" : "mobile_lvl2"}>
+            <li
+              className="mobile_lvl2_head"
+              onClick={() => setCarousel2(!carousel2)}
+            >
+              <div className="icon_return">
+                <Icon icon="bi:chevron-left" />
+              </div>
+              <div className="lvl_name">GALLERY</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Projects One</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Projects Two</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Projects Three</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Project Details</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Project Details Two</div>
+            </li>
+          </ul>
+          <ul className={carousel3 ? "mobile_lvl2 moving" : "mobile_lvl2"}>
+            <li
+              className="mobile_lvl2_head"
+              onClick={() => setCarousel3(!carousel3)}
+            >
+              <div className="icon_return">
+                <Icon icon="bi:chevron-left" />
+              </div>
+              <div className="lvl_name">PAGES</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">About Us</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Team</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Services</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Shop</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">404 Page</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Coming Soon</div>
+            </li>
+          </ul>
+          <ul className={carousel4 ? "mobile_lvl2 moving" : "mobile_lvl2"}>
+            <li
+              className="mobile_lvl2_head"
+              onClick={() => setCarousel4(!carousel4)}
+            >
+              <div className="icon_return">
+                <Icon icon="bi:chevron-left" />
+              </div>
+              <div className="lvl_name">BLOG</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Blog</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Blog Details</div>
             </li>
           </ul>
         </div>
