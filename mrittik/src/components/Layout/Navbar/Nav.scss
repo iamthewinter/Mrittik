@@ -544,6 +544,9 @@ nav {
           line-height: 0;
           border-left: 0px solid transparent;
           transition: all 0.5s ease-in-out;
+          &:hover {
+            border-left: 3px solid $text_color_grey2;
+          }
 
           .link_place {
             border-bottom: 1px solid $back_color1;
@@ -561,6 +564,7 @@ nav {
             overflow: hidden;
             touch-action: manipulation;
             min-height: 50px;
+            cursor: pointer;
           }
 
           .link_span {
@@ -580,36 +584,73 @@ nav {
             text-align: center;
             touch-action: manipulation;
             transition: all 0.5s ease-in-out;
+            &:hover {
+              svg {
+                color: $text_color_grey2;
+              }
+            }
           }
         }
       }
       .mobile_lvl2 {
         position: absolute;
         top: 0;
-        left: 100%;
+        left: 110%;
         margin: 0;
         padding: 0;
         width: 440px;
         transition: 0.5s ease-in-out;
         // background-color: $text_white;
+        @media (max-width: 768px) {
+          width: 280px;
+        }
+
         .mobile_lvl2_head {
           display: flex;
-          padding: 10px 25px;
+          padding: 15px;
+          margin: 0 0px;
+          background-color: $back_color1;
+          cursor: pointer;
           .icon_return {
             width: 40%;
           }
           .lvl_name {
             width: 60%;
+            font-weight: 600;
           }
         }
         .mobile_li2 {
-          padding: 10px 25px;
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 15px 0 0;
+          .link_span {
+            background-color: $text_color_grey1;
+            width: 40px;
+            height: 100%;
+            line-height: 50px;
+            text-align: center;
+          }
+          .link_place {
+            border-bottom: 1px solid $back_color1;
+            padding: 14px 30px;
+            width: calc(100% - 40px);
+          }
+          &:hover {
+            color: $text_color_grey2;
+            border-left: 3px solid $text_color_grey2;
+          }
         }
       }
       .moving {
         left: 0%;
       }
       .replace {
+        transform: translateX(-440px);
+      }
+      #lvl3 {
         transform: translateX(-440px);
       }
     }

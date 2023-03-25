@@ -11,6 +11,9 @@ const Nav = () => {
   const [carousel2, setCarousel2] = useState(false);
   const [carousel3, setCarousel3] = useState(false);
   const [carousel4, setCarousel4] = useState(false);
+  const [lastcarousel1, setLastcarousel1] = useState(false);
+  const [lastcarousel2, setLastcarousel2] = useState(false);
+  const [lastcarousel3, setLastcarousel3] = useState(false);
 
   // useEffect(()=>{
   //   const handler = (e)=>{
@@ -381,7 +384,10 @@ const Nav = () => {
               <div className="link_place">Project Details Two</div>
             </li>
           </ul>
-          <ul className={carousel3 ? "mobile_lvl2 moving" : "mobile_lvl2"}>
+          <ul
+            className={carousel3 ? "mobile_lvl2 moving" : "mobile_lvl2"}
+            id={lastcarousel1 || lastcarousel2 || lastcarousel3 ? "lvl3" : ""}
+          >
             <li
               className="mobile_lvl2_head"
               onClick={() => setCarousel3(!carousel3)}
@@ -396,12 +402,30 @@ const Nav = () => {
             </li>
             <li className="mobile_li2">
               <div className="link_place">Team</div>
+              <span
+                className="link_span"
+                onClick={() => setLastcarousel1(!lastcarousel1)}
+              >
+                <Icon icon="bi:chevron-right" />
+              </span>
             </li>
             <li className="mobile_li2">
               <div className="link_place">Services</div>
+              <span
+                className="link_span"
+                onClick={() => setLastcarousel2(!lastcarousel2)}
+              >
+                <Icon icon="bi:chevron-right" />
+              </span>
             </li>
             <li className="mobile_li2">
               <div className="link_place">Shop</div>
+              <span
+                className="link_span"
+                onClick={() => setLastcarousel3(!lastcarousel3)}
+              >
+                <Icon icon="bi:chevron-right" />
+              </span>
             </li>
             <li className="mobile_li2">
               <div className="link_place">404 Page</div>
@@ -425,6 +449,75 @@ const Nav = () => {
             </li>
             <li className="mobile_li2">
               <div className="link_place">Blog Details</div>
+            </li>
+          </ul>
+          <ul className={lastcarousel1 ? "mobile_lvl2 moving" : "mobile_lvl2"}>
+            <li
+              className="mobile_lvl2_head"
+              onClick={() => setLastcarousel1(!lastcarousel1)}
+            >
+              <div className="icon_return">
+                <Icon icon="bi:chevron-left" />
+              </div>
+              <div className="lvl_name">TEAM</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Our Team</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Team Details</div>
+            </li>
+          </ul>
+          <ul className={lastcarousel2 ? "mobile_lvl2 moving" : "mobile_lvl2"}>
+            <li
+              className="mobile_lvl2_head"
+              onClick={() => setLastcarousel2(!lastcarousel2)}
+            >
+              <div className="icon_return">
+                <Icon icon="bi:chevron-left" />
+              </div>
+              <div className="lvl_name">SERVICES</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Service One</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Service Two</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Service Details</div>
+            </li>
+          </ul>
+          <ul className={lastcarousel3 ? "mobile_lvl2 moving" : "mobile_lvl2"}>
+            <li
+              className="mobile_lvl2_head"
+              onClick={() => setLastcarousel3(!lastcarousel3)}
+            >
+              <div className="icon_return">
+                <Icon icon="bi:chevron-left" />
+              </div>
+              <div className="lvl_name">SHOP</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Shop One</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Shop Two</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Shop Three</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Product Details</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Shop Cart</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Checkout</div>
+            </li>
+            <li className="mobile_li2">
+              <div className="link_place">Login</div>
             </li>
           </ul>
         </div>
