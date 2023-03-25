@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./App.scss";
 import Home from "./components/Pages/Home/Home";
+// import { Icon } from "@iconify/react";
+import DarkMode from "./components/DarkMode/DarkMode";
 function App() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -35,6 +37,7 @@ function App() {
         variants={variants}
         animate="default"
       ></motion.div>
+      <DarkMode />
     </div>
   );
 }

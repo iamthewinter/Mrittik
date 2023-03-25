@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
-import Logo from "../../../assets/logo-dark.svg";
+import React, { useState } from "react";
+import Logo1 from "../../../assets/logo-dark.svg";
+// import Logo2 from "../../../assets/logo-light.svg";
 import "../Navbar/Nav.scss";
 import { Icon } from "@iconify/react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Nav = () => {
   const [show, setShow] = useState(false);
   const [scale, setScale] = useState(false);
@@ -28,9 +29,12 @@ const Nav = () => {
       <div className="container px_5">
         <div className="row px_5 justify-content-between align-items-center">
           <div className="col-xl-2 col-lg-2 col-6 px-0 media576">
-            <div className="logo">
-              <img src={Logo} alt="" />
+            <div className="logo_black">
+              <img src={Logo1} alt="" />
             </div>
+            {/* <div className="logo_light">
+              <img src={Logo2} alt="" />
+            </div> */}
           </div>
           <div className="col-xl-7 col-lg-7 px-0 midnav_none">
             <div className="col_adapter">
@@ -267,10 +271,9 @@ const Nav = () => {
         className={translate ? "mobile_nav_menu showing" : "mobile_nav_menu"}
       >
         <div className="menu_head">
-          <div
-            className="close_btn"
-            onClick={() => setTranslate(!translate)}
-          ></div>
+          <div className="close_btn" onClick={() => setTranslate(!translate)}>
+            <Icon icon="vaadin:close" />
+          </div>
           <div className="big_logo">
             <img
               src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/logo-dark-lg.svg"

@@ -8,7 +8,7 @@ nav {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 100;
 
   .px_5 {
     padding: 0 3rem;
@@ -26,8 +26,11 @@ nav {
     }
   }
 
-  .logo {
+  .logo_black {
     height: 100%;
+    img {
+      transition: 0.3s ease-in-out;
+    }
   }
 
   .midnav_none {
@@ -368,13 +371,13 @@ nav {
     }
 
     @media (max-width: 576px) {
-      width: 60%;
+      width: 65%;
     }
 
     .close_field {
       display: flex;
       align-items: center;
-      justify-content: end;
+      justify-content: flex-end;
       width: 100%;
       margin-bottom: 55px;
       height: 26px;
@@ -477,7 +480,7 @@ nav {
     line-height: 19px;
     overflow: hidden;
     overflow-y: auto;
-    z-index: 120;
+    z-index: 100;
     box-shadow: 0 0 12px rgb(0 0 0 / 14%);
     transition: 0.5s ease-in-out;
 
@@ -503,6 +506,14 @@ nav {
       .close_btn {
         width: 100%;
         height: 35px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        svg {
+          width: 40px;
+          font-size: 14px;
+          margin-top: 10px;
+        }
       }
     }
 
@@ -625,7 +636,8 @@ nav {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding: 0 15px 0 0;
+          margin: 0 15px 0 0;
+          border-bottom: 1px solid $back_color1;
           .link_span {
             background-color: $text_color_grey1;
             width: 40px;
@@ -634,7 +646,6 @@ nav {
             text-align: center;
           }
           .link_place {
-            border-bottom: 1px solid $back_color1;
             padding: 14px 30px;
             width: calc(100% - 40px);
           }

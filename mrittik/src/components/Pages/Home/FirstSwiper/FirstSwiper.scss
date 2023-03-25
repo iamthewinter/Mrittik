@@ -41,11 +41,11 @@
     .col_adaptation {
       height: 100%;
       width: 100%;
-      border-right: 1px solid rgb(221, 221, 221);
+      border-right: 1px solid $back_border_light;
     }
 
     .brdr_left {
-      border-left: 1px solid rgb(221, 221, 221);
+      border-left: 1px solid $back_border_light;
     }
   }
 
@@ -285,6 +285,9 @@
               height: 6.25rem;
               width: 0.5px;
               background-color: $text_color_dark3;
+              @media (max-width: 1400px) {
+                height: calc(1.75rem + 5.14286vw);
+              }
             }
           }
 

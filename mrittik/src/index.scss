@@ -7,7 +7,130 @@ body {
   font-family: $second_font !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $text_color_dark1 !important;
+  // color: $text_color_dark1 !important;
+}
+
+body.light {
+  background: $text_white;
+  color: $text_color_dark1;
+  transition: 0.3s ease-in-out;
+}
+
+body.dark {
+  background: $text_color_dark2 !important;
+  color: $text_white;
+  transition: 0.3s ease-in-out;
+
+  nav {
+    .logo_black {
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    .col_adapter {
+      .main_nav_list {
+        .main_nav_heading {
+          .link_holder {
+            span {
+              font-weight: 500;
+            }
+          }
+
+          .rest_menu {
+            background-color: $text_color_dark2;
+
+            .rest_pages {
+              .third_level_head {
+                svg {
+                  color: $text_color_grey2;
+                }
+              }
+              .third_lvl_menu {
+                background-color: $text_color_dark2;
+                .rest_pages1 {
+                  span {
+                    color: $text_white;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .right_nav {
+      svg {
+        color: $text_color_grey3;
+      }
+    }
+    .information_window {
+      background-color: $back_border_dark1;
+      .close_field {
+        svg {
+          color: $text_color_grey3;
+        }
+      }
+      .logo_field {
+        .info_logo {
+          img {
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+      p {
+        color: $text_color_grey3;
+      }
+      h5 {
+        color: $text_white;
+      }
+    }
+    .mobile_nav_menu {
+      background-color: $text_color_dark2;
+      .menu_head {
+        .big_logo {
+          img {
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+      .menu_pannel {
+        .mobile_list {
+          .mobile_li {
+            .link_place {
+              border-bottom-color: $border_bottom_color;
+            }
+          }
+        }
+        .mobile_lvl2 {
+          .mobile_lvl2_head {
+            border-bottom: 1px solid $border_bottom_color;
+            background-color: $back_btn_color;
+          }
+          .mobile_li2 {
+            border-bottom-color: $border_bottom_color;
+            .link_span {
+              background-color: $back_btn_color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .first_section {
+    background-color: $text_color_dark1;
+
+    .section_under {
+      .col_adaptation {
+        border-right-color: $back_border_dark;
+      }
+
+      .brdr_left {
+        border-left-color: $back_border_dark;
+      }
+    }
+  }
 }
 
 code {
