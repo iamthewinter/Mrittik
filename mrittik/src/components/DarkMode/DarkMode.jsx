@@ -1,5 +1,6 @@
 import React from "react";
 import "../../App.scss";
+import "../DarkMode/DarkMode.scss";
 import "../../components/Pages/Home/FirstSwiper/FirstSwiper.scss";
 import { Icon } from "@iconify/react";
 const DarkMode = () => {

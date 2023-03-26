@@ -4,6 +4,9 @@ import "./App.scss";
 import Home from "./components/Pages/Home/Home";
 // import { Icon } from "@iconify/react";
 import DarkMode from "./components/DarkMode/DarkMode";
+import "../src/components/DarkMode/DarkMode.scss";
+import ToTopButton from "./components/ToTopButton/ToTopButton";
+import "./components/ToTopButton/ToTopButton.scss";
 function App() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -30,7 +33,7 @@ function App() {
     },
   };
   return (
-    <div className="App">
+    <main className="App">
       <Home />
       <motion.div
         className="cursor"
@@ -38,7 +41,8 @@ function App() {
         animate="default"
       ></motion.div>
       <DarkMode />
-    </div>
+      <ToTopButton />
+    </main>
   );
 }
 

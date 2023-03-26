@@ -1,0 +1,37 @@
+.topbtn {
+  position: fixed;
+  bottom: 70px;
+  right: 1.5625rem;
+  z-index: 100;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #a6a182;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1b1b1b;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 1px;
+    height: 30px;
+    background-color: #a6a182;
+    transition: all 0.5s ease-in-out;
+    top: -50px;
+  }
+}
+
+.topbtn_visible {
+  opacity: 1;
+  visibility: visible;
+  &::before {
+    top: -15px;
+  }
+}

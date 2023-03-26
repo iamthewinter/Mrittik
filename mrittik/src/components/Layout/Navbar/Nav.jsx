@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo1 from "../../../assets/logo-dark.svg";
 // import Logo2 from "../../../assets/logo-light.svg";
 import "../Navbar/Nav.scss";
@@ -16,6 +16,34 @@ const Nav = () => {
   const [lastcarousel2, setLastcarousel2] = useState(false);
   const [lastcarousel3, setLastcarousel3] = useState(false);
 
+  const [color, setColor] = useState(false);
+  // const [hideNav, setHideNav]=useState(false)
+  // const [ShowNav, setShowNav]=useState(false)
+  // const currentScroll = window.pageYOffset
+  const changeColor = () => {
+    if (window.scrollY >= 20) {
+      setColor(true);
+      // if (window.scrollY >= 700) {
+      //   setHideNav(true)
+      // } else{
+      //   setHideNav(false)
+      //   if(currentScroll<window.scrollY){
+      //     setShowNav(true)
+      //   }else{
+      //     setShowNav(false)
+      //   }
+      // }
+    } else {
+      setColor(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeColor);
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
+  }, []);
   // useEffect(()=>{
   //   const handler = (e)=>{
   //       if (e.target) {
@@ -25,7 +53,10 @@ const Nav = () => {
   //   document.addEventListener("mousedown", handler)
   // })
   return (
-    <nav>
+    <nav
+      className={color ? "transparent_nav nav_scroll" : "transparent_nav"}
+      // id={hideNav ? "hide_nav" : ""}
+    >
       <div className="container px_5">
         <div className="row px_5 justify-content-between align-items-center">
           <div className="col-xl-2 col-lg-2 col-6 px-0 media576">

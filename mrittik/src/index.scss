@@ -14,6 +14,9 @@ body.light {
   background: $text_white;
   color: $text_color_dark1;
   transition: 0.3s ease-in-out;
+  .nav_scroll {
+    background-color: $back_color1;
+  }
 }
 
 body.dark {
@@ -21,7 +24,7 @@ body.dark {
   color: $text_white;
   transition: 0.3s ease-in-out;
 
-  nav {
+  .transparent_nav {
     .logo_black {
       img {
         filter: brightness(0) invert(1);
@@ -49,6 +52,11 @@ body.dark {
               .third_lvl_menu {
                 background-color: $text_color_dark2;
                 .rest_pages1 {
+                  &:hover {
+                    span {
+                      color: $text_color_grey2;
+                    }
+                  }
                   span {
                     color: $text_white;
                   }
@@ -118,6 +126,9 @@ body.dark {
     }
   }
 
+  .topbtn {
+    color: $text_color_grey2;
+  }
   .first_section {
     background-color: $text_color_dark1;
 
