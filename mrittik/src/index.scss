@@ -8,6 +8,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // color: $text_color_dark1 !important;
+  a {
+    text-decoration: none;
+    color: $text_color_dark1;
+  }
 }
 
 body.light {
@@ -23,6 +27,9 @@ body.dark {
   background: $text_color_dark2 !important;
   color: $text_white;
   transition: 0.3s ease-in-out;
+  a {
+    color: $text_white;
+  }
 
   .transparent_nav {
     .logo_black {

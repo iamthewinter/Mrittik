@@ -3,7 +3,9 @@ import Logo1 from "../../../assets/logo-dark.svg";
 // import Logo2 from "../../../assets/logo-light.svg";
 import "../Navbar/Nav.scss";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
+
 const Nav = () => {
   const [show, setShow] = useState(false);
   const [scale, setScale] = useState(false);
@@ -61,7 +63,9 @@ const Nav = () => {
         <div className="row px_5 justify-content-between align-items-center">
           <div className="col-xl-2 col-lg-2 col-6 px-0 media576">
             <div className="logo_black">
-              <img src={Logo1} alt="" />
+              <Link to="/">
+                <img src={Logo1} alt="" />
+              </Link>
             </div>
             {/* <div className="logo_light">
               <img src={Logo2} alt="" />
@@ -72,12 +76,16 @@ const Nav = () => {
               <ul className="main_nav_list">
                 <li className="main_nav_heading">
                   <div className="link_holder">
-                    <span>HOME</span>
+                    <span>
+                      <Link to="/">HOME</Link>
+                    </span>
                     <Icon icon="mdi-light:chevron-down" />
                   </div>
                   <ul className="rest_menu">
                     <li className="rest_pages">
-                      <span>HOME ONE</span>
+                      <span>
+                        <Link to="/">HOME ONE</Link>
+                      </span>
                     </li>
                     <li className="rest_pages">
                       <span>HOME TWO</span>
@@ -129,7 +137,9 @@ const Nav = () => {
                   </div>
                   <ul className="rest_menu">
                     <li className="rest_pages">
-                      <span>ABOUT US</span>
+                      <span>
+                        <Link to="/about">ABOUT US</Link>
+                      </span>
                     </li>
                     <li className="rest_pages">
                       <div className="third_level_head">
@@ -138,7 +148,9 @@ const Nav = () => {
                       </div>
                       <ul className="third_lvl_menu">
                         <li className="rest_pages1">
-                          <span>OUR TEAM</span>
+                          <span>
+                            <Link to="/team">OUR TEAM</Link>
+                          </span>
                         </li>
                         <li className="rest_pages1">
                           <span>TEAM DETAILS</span>
@@ -187,7 +199,9 @@ const Nav = () => {
                           <span>CHECKOUT</span>
                         </li>
                         <li className="rest_pages1">
-                          <span>LOGIN</span>
+                          <span>
+                            <Link to="/login">LOGIN</Link>
+                          </span>
                         </li>
                       </ul>
                     </li>
@@ -201,7 +215,9 @@ const Nav = () => {
                 </li>
                 <li className="main_nav_heading">
                   <div className="link_holder">
-                    <span>CONTACTS</span>
+                    <span>
+                      <Link to="/contacts">CONTACTS</Link>
+                    </span>
                   </div>
                 </li>
                 <li className="main_nav_heading">
@@ -211,7 +227,9 @@ const Nav = () => {
                   </div>
                   <ul className="rest_menu">
                     <li className="rest_pages">
-                      <span>BLOG</span>
+                      <span>
+                        <Link to="/blog">BLOG</Link>
+                      </span>
                     </li>
                     <li className="rest_pages">
                       <span>BLOG DETAILS</span>
@@ -257,10 +275,12 @@ const Nav = () => {
         </div>
         <div className="logo_field">
           <div className="info_logo">
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/logo-dark-lg.svg"
-              alt=""
-            />
+            <Link to="/">
+              <img
+                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/logo-dark-lg.svg"
+                alt=""
+              />
+            </Link>
           </div>
         </div>
         <p>
@@ -306,10 +326,13 @@ const Nav = () => {
             <Icon icon="vaadin:close" />
           </div>
           <div className="big_logo">
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/logo-dark-lg.svg"
-              alt=""
-            />
+            <Link to="/">
+              {" "}
+              <img
+                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/logo-dark-lg.svg"
+                alt=""
+              />
+            </Link>
           </div>
         </div>
         <div className="menu_pannel">
@@ -321,7 +344,9 @@ const Nav = () => {
             }
           >
             <li className="mobile_li">
-              <div className="link_place">Home</div>
+              <div className="link_place">
+                <Link to="/">Home</Link>
+              </div>
               <span
                 className="link_span"
                 onClick={() => setCarousel1(!carousel1)}
@@ -348,7 +373,9 @@ const Nav = () => {
               </span>
             </li>
             <li className="mobile_li">
-              <div className="link_place">Contacts</div>
+              <div className="link_place">
+                <Link to="/contacts">Contacts</Link>
+              </div>
             </li>
             <li className="mobile_li">
               <div className="link_place">Blog</div>
@@ -371,7 +398,9 @@ const Nav = () => {
               <div className="lvl_name">HOME</div>
             </li>
             <li className="mobile_li2">
-              <div className="link_place">Home One</div>
+              <div className="link_place">
+                <Link to="/">Home One</Link>
+              </div>
             </li>
             <li className="mobile_li2">
               <div className="link_place">Home Two</div>
@@ -432,7 +461,9 @@ const Nav = () => {
               <div className="lvl_name">PAGES</div>
             </li>
             <li className="mobile_li2">
-              <div className="link_place">About Us</div>
+              <div className="link_place">
+                <Link to="/about">About Us</Link>
+              </div>
             </li>
             <li className="mobile_li2">
               <div className="link_place">Team</div>
@@ -479,7 +510,9 @@ const Nav = () => {
               <div className="lvl_name">BLOG</div>
             </li>
             <li className="mobile_li2">
-              <div className="link_place">Blog</div>
+              <div className="link_place">
+                <Link to="/blog">Blog</Link>
+              </div>
             </li>
             <li className="mobile_li2">
               <div className="link_place">Blog Details</div>
@@ -496,7 +529,9 @@ const Nav = () => {
               <div className="lvl_name">TEAM</div>
             </li>
             <li className="mobile_li2">
-              <div className="link_place">Our Team</div>
+              <div className="link_place">
+                <Link to="/team">Our Team</Link>
+              </div>
             </li>
             <li className="mobile_li2">
               <div className="link_place">Team Details</div>
@@ -551,7 +586,9 @@ const Nav = () => {
               <div className="link_place">Checkout</div>
             </li>
             <li className="mobile_li2">
-              <div className="link_place">Login</div>
+              <div className="link_place">
+                <Link to="/login">Login</Link>
+              </div>
             </li>
           </ul>
         </div>

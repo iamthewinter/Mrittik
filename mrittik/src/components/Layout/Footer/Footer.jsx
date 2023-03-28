@@ -2,6 +2,7 @@ import React from "react";
 import "../Footer/Footer.scss";
 import { Icon } from "@iconify/react";
 import LightLogo from "../../../assets/logo-light.svg";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
@@ -37,7 +38,9 @@ const Footer = () => {
               <div className="footer_elements">
                 <div className="footer_el_inner">
                   <div className="footer_logo">
-                    <img src={LightLogo} alt="" />
+                    <Link to="/">
+                      <img src={LightLogo} alt="" />
+                    </Link>
                   </div>
                   <div className="footer_social">
                     <ul className="social_list">
