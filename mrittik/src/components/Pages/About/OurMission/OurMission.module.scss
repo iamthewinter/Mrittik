@@ -1,0 +1,30 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
+.first_section {
+  padding: 230px 0 0 0;
+
+  .page_heading {
+    text-align: center;
+    margin-bottom: 180px;
+    padding: 0px 30px;
+
+    h6 {
+      font-size: 0.875rem;
+      line-height: 1.75rem;
+      letter-spacing: 0.3125rem;
+      color: $text_white;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.875rem;
+      line-height: 3.125rem;
+      margin: 1.875rem 0 1rem 0;
+      letter-spacing: -1px;
+      font-weight: 300;
+      color: $text_color_grey3;
+    }
+  }
+}
