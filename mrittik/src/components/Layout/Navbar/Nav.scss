@@ -32,6 +32,7 @@
     height: 100%;
     img {
       transition: 0.3s ease-in-out;
+      cursor: pointer;
     }
   }
 
@@ -395,6 +396,7 @@
 
       .info_logo {
         img {
+          cursor: pointer;
           @media (max-width: 576px) {
             width: 70%;
           }
@@ -683,6 +685,9 @@
   transition: 0.5s ease;
   opacity: 1;
   visibility: visible;
+  @media (max-width: 992px) {
+    padding: 10px 0;
+  }
   // transform: translate3d(10%,10%,10%);
 }
 
