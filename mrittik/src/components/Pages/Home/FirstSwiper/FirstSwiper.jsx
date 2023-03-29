@@ -136,6 +136,7 @@ const FirstSwiper = () => {
           </div>
         </div>
       </div>
+      <div className="white_separator"></div>
     </section>
   );
 };

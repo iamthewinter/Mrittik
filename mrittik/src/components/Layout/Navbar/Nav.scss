@@ -694,6 +694,11 @@
   transition: 0.5s ease;
   opacity: 1;
   visibility: visible;
+  .right_nav {
+    .search_popup {
+      top: 120%;
+    }
+  }
   @media (max-width: 992px) {
     padding: 10px 0;
   }

@@ -2,6 +2,11 @@
 @import "./Scss/variable";
 @import "./Scss/mixin";
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: $second_font !important;
@@ -147,6 +152,9 @@ body.dark {
       .brdr_left {
         border-left-color: $back_border_dark;
       }
+    }
+    .white_separator {
+      background-color: $text_color_dark2;
     }
   }
 }
