@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Services.scss";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Services = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section className="second_section">
       <div className="container px_5">
         <div className="row px_5">
-          <div className="col-xl-4 col-lg-4 pr_10">
+          <div
+            className="col-xl-4 col-lg-4 pr_10"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
             <div className="col_box">
               <h6>01</h6>
               <img
@@ -35,7 +44,11 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 pl_10">
+          <div
+            className="col-xl-4 col-lg-4 pl_10"
+            data-aos="fade-up"
+            data-aos-duration="700"
+          >
             <div className="col_box">
               <h6>02</h6>
               <img
@@ -64,7 +77,11 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 pl_10">
+          <div
+            className="col-xl-4 col-lg-4 pl_10"
+            data-aos="fade-up"
+            data-aos-duration="900"
+          >
             <div className="col_box">
               <h6>03</h6>
               <img
