@@ -1,3 +1,6 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
 .fourth_section {
   padding: 100px 0;
   background-repeat: no-repeat;
@@ -37,12 +40,18 @@
     .achievement1 {
       display: flex;
       align-items: center;
+      @media (max-width: 768px) {
+        width: 48%;
+      }
+      @media (max-width: 550px) {
+        width: auto;
+      }
 
       .achive_img {
         width: 4.375rem;
         height: 4.375rem;
         line-height: 4.125rem;
-        border: 0.0625rem dashed #ffffff;
+        border: 0.0625rem dashed $text_white;
         border-radius: 100%;
         flex-shrink: 0;
         margin-right: 1.25rem;
@@ -62,7 +71,7 @@
           font-size: 0.875rem;
           font-weight: 600;
           text-transform: uppercase;
-          color: #ffffff;
+          color: $text_white;
           margin-bottom: 0rem;
           line-height: 1.75rem;
         }
@@ -73,7 +82,7 @@
             line-height: 2rem;
             font-size: 1.5rem;
             font-weight: 600;
-            color: #ffffff;
+            color: $text_white;
             margin-top: 0rem;
             margin-bottom: 0rem;
 
