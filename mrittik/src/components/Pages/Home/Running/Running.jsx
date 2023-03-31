@@ -82,7 +82,7 @@ const Running = () => {
               <div
                 className="grid_el"
                 data-aos="fade-left"
-                data-aos-duration="1000"
+                data-aos-duration="1500"
               >
                 <div className="thumb">
                   <img
