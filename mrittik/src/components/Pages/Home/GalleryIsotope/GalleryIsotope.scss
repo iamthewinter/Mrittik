@@ -3,9 +3,10 @@
 
 .sixth_section {
   position: relative;
-  padding: 100px 0px 200px 0;
+  padding: 100px 0px;
   z-index: 1;
   background-color: $back_color1;
+  transition: 0.3s ease-in-out;
   @extend %grid_animation;
 
   .net_lines {

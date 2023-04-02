@@ -6,6 +6,7 @@ import Running from "./Running/Running";
 import Services from "./Services/Services";
 import GalleryIsotope from "./GalleryIsotope/GalleryIsotope";
 import BlackBoxSwipe from "./BlackBoxSwipe/BlackBoxSwipe";
+import LatestBlogs from "./LatestBlogs/LatestBlogs";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Running />
       <GalleryIsotope />
       <BlackBoxSwipe />
+      <LatestBlogs />
     </>
   );
 };

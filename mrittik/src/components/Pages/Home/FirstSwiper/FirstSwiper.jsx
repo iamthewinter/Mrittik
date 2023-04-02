@@ -131,28 +131,6 @@ const FirstSwiper = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                  <div className="slider_inner">
-                    <div className="slider_img">
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/slider/8.jpg"
-                        alt=""
-                      />
-                      <Tilt className="image_card" options={options}>
-                        <h6>CONDOMINIUM</h6>
-                        <h4>Find your own self invintage lake house</h4>
-                        <div className="details_link">
-                          <span className="details_text">VIEW DETAILS</span>
-                          <span className="link_animation">
-                            <span className="line"></span>
-                            <span className="circle"></span>
-                            <span className="dot"></span>
-                          </span>
-                        </div>
-                      </Tilt>
-                    </div>
-                  </div>
-                </SwiperSlide>
               </Swiper>
             </div>
           </div>

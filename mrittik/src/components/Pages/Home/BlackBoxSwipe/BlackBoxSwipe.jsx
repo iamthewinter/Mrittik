@@ -9,6 +9,15 @@ import "../FirstSwiper/FirstSwiper.scss";
 const BlackBoxSwipe = () => {
   return (
     <section className="seventh_section">
+      <ul className="net_lines justify-content-between">
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+      </ul>
       <div className="short_line"></div>
       <div className="black_box">
         <div className="row justify-content-center">

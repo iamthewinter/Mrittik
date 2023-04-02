@@ -2,9 +2,19 @@
 @import "../../../../Scss/mixin";
 
 .seventh_section {
-  padding: 0 4.375rem 0 4.375rem;
+  padding: 100px 4.375rem 0 4.375rem;
+  position: relative;
   @media (max-width: 1400px) {
     padding: 0 calc(1.5625rem + 3.21429vw);
+  }
+  @extend %grid_animation;
+
+  .net_lines {
+    padding: 0 8.9375rem;
+
+    .animated_line {
+      background-color: $back_border_light;
+    }
   }
 
   .short_line {
@@ -17,8 +27,11 @@
       position: absolute;
       left: calc(50% - 1px);
       bottom: calc(100% - 60px);
-      width: 1px;
+      width: 2px;
       background: $text_color_grey3;
+      @media (max-width: 768px) {
+        width: 1px;
+      }
     }
   }
 
@@ -61,8 +74,7 @@
       }
 
       .swiper-slide {
-        width: 870px;
-        margin-right: 170px;
+        cursor: grab;
 
         .swipe_item {
           text-align: center;

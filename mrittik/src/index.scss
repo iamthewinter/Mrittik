@@ -324,6 +324,26 @@ body.dark {
       }
     }
   }
+  .seventh_section {
+    .net_lines {
+      .animated_line {
+        background-color: $back_border_dark;
+      }
+    }
+  }
+  .eighth_section {
+    background: $text_color_dark2;
+    .big_back_word {
+      h2 {
+        color: $back_border_dark1;
+      }
+    }
+    .central_texts {
+      h2 {
+        color: $text_white;
+      }
+    }
+  }
 }
 
 code {
