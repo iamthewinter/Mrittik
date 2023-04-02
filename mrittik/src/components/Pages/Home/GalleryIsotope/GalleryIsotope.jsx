@@ -148,7 +148,7 @@ const GalleryIsotope = () => {
                       </motion.div>
                     </React.Fragment>
                   ))}
-              {activeGenre === 0 ? (
+              {activeGenre === 0 && showmore ? (
                 <div className="col-xl-12 px_4 mt-5">
                   <div
                     className="load_more_btn"

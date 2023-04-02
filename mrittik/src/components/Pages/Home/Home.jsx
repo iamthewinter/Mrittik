@@ -5,6 +5,7 @@ import FirstSwiper from "./FirstSwiper/FirstSwiper";
 import Running from "./Running/Running";
 import Services from "./Services/Services";
 import GalleryIsotope from "./GalleryIsotope/GalleryIsotope";
+import BlackBoxSwipe from "./BlackBoxSwipe/BlackBoxSwipe";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Achievements />
       <Running />
       <GalleryIsotope />
+      <BlackBoxSwipe />
     </>
   );
 };
