@@ -49,7 +49,7 @@
     }
 
     @media (max-width: 576px) {
-      padding: 0 10px;
+      padding: 0 12px;
     }
   }
 
@@ -99,6 +99,12 @@
   .px_4 {
     padding: 0 1.5rem;
     @media (max-width: 1400px) {
+      padding: 0;
+    }
+  }
+
+  .px_12 {
+    @media (max-width: 576px) {
       padding: 0;
     }
   }

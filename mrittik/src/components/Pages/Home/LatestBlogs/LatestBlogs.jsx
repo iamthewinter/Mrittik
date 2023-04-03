@@ -22,7 +22,7 @@ const LatestBlogs = () => {
           </div>
         </div>
         <div className="row px_5">
-          <div className="col-xl-4 col-lg-6 col-md-6">
+          <div className="col-xl-4 col-lg-6 col-md-6 px_12">
             <div className="blog_post">
               <img
                 src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/blog/1.jpg"
@@ -56,7 +56,7 @@ const LatestBlogs = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-6 col-md-6">
+          <div className="col-xl-4 col-lg-6 col-md-6 px_12">
             <div className="blog_post">
               <img
                 src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/blog/2.jpg"
@@ -90,7 +90,7 @@ const LatestBlogs = () => {
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-6 col-md-6">
+          <div className="col-xl-4 col-lg-6 col-md-6 px_12">
             <div className="blog_post">
               <img
                 src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/blog/3.jpg"
