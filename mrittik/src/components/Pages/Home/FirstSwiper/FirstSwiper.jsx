@@ -118,7 +118,7 @@ const FirstSwiper = () => {
                       />
                       <Tilt className="image_card" options={options}>
                         <h6>CONDOMINIUM</h6>
-                        <h4>Find your own self invintage lake house</h4>
+                        <h4>Find your own invintage lake house</h4>
                         <div className="details_link">
                           <span className="details_text">VIEW DETAILS</span>
                           <span className="link_animation">
@@ -136,6 +136,7 @@ const FirstSwiper = () => {
           </div>
         </div>
       </div>
+      <div className="white_separator"></div>
     </section>
   );
 };

@@ -100,3 +100,141 @@
   display: flex;
   align-items: center;
 }
+
+%grid_animation {
+  .net_lines {
+    padding: 0 0.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    .animated_line {
+      background-color: #191919;
+      position: relative;
+      width: 1px;
+      height: 100%;
+      display: inline-block;
+      mix-blend-mode: difference;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 60px;
+        background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.3) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        animation: gridanim 25s linear infinite;
+
+        @keyframes gridanim {
+          0% {
+            top: 0%;
+          }
+
+          100% {
+            top: 100%;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        &::before {
+          animation-delay: 1s;
+        }
+      }
+
+      &:nth-child(4) {
+        &::before {
+          animation-delay: 1s;
+        }
+      }
+
+      &:nth-child(6) {
+        &::before {
+          animation-delay: 1s;
+        }
+      }
+    }
+  }
+}
+
+%perspective_info {
+  .works_info {
+    right: -110px;
+    left: unset;
+    padding: 2.8125rem;
+    position: absolute;
+    background: $text_color_dark1;
+    max-width: 300px;
+    top: 50%;
+    margin-top: 0px;
+    transform: translateY(-50%) perspective(400px) rotateY(-90deg);
+    transform-origin: center;
+    transition: all 0.5s ease-in-out;
+
+    .works_texts {
+      h6 {
+        letter-spacing: 0.1875rem;
+        color: $text_color_grey2;
+        font-size: 0.6875rem;
+        font-weight: 600;
+        line-height: 1.375rem;
+        margin-bottom: 0px;
+        transition-delay: 0.9s;
+
+        a {
+          color: $text_color_grey2;
+        }
+      }
+
+      h5 {
+        margin: 3.125rem 0 1.25rem 0;
+        position: relative;
+        color: $text_white;
+        transition-delay: 0.6s;
+        font-size: 1.25rem;
+        font-weight: 600;
+
+        a {
+          color: $text_white;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            color: $text_color_grey2;
+          }
+        }
+      }
+    }
+  }
+}
+
+%input_group {
+  margin-bottom: 1.5625rem;
+  transition: all 0.5s ease;
+  display: block;
+  width: 100%;
+  height: 64px;
+  padding: 10px 40px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: $back_color1;
+  color: $text_color_dark1;
+  min-height: calc(1.5em + 1rem + 2px);
+  line-height: 1.5;
+  border: 1px solid $text_color_grey1;
+}
