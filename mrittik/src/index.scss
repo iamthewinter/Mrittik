@@ -57,7 +57,7 @@ body.dark {
           }
 
           .rest_menu {
-            background-color: $text_color_dark2;
+            background-color: $back_border_dark1;
 
             .rest_pages {
               .third_level_head {
@@ -67,7 +67,7 @@ body.dark {
               }
 
               .third_lvl_menu {
-                background-color: $text_color_dark2;
+                background-color: $back_border_dark1;
 
                 .rest_pages1 {
                   &:hover {
