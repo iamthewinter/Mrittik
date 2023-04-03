@@ -7,6 +7,7 @@ import Services from "./Services/Services";
 import GalleryIsotope from "./GalleryIsotope/GalleryIsotope";
 import BlackBoxSwipe from "./BlackBoxSwipe/BlackBoxSwipe";
 import LatestBlogs from "./LatestBlogs/LatestBlogs";
+import ContactUs from "./ContactUs/ContactUs";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <GalleryIsotope />
       <BlackBoxSwipe />
       <LatestBlogs />
+      <ContactUs />
     </>
   );
 };

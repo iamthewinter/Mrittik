@@ -12,6 +12,10 @@
   .net_lines {
     padding: 0 8.9375rem;
 
+    @media (max-width: 1400px) {
+      padding: 0 calc(2.01875rem + 7.90714vw);
+    }
+
     .animated_line {
       background-color: $back_border_light;
     }
@@ -191,6 +195,9 @@
 
   .filter_image {
     position: relative;
+    @media (max-width: 576px) {
+      overflow: hidden;
+    }
 
     &:hover {
       .works_info {
@@ -213,6 +220,10 @@
       transform-origin: right;
       transform: perspective(250px) rotateY(-90deg);
       transition: all 0.5s ease-in-out;
+
+      @media (max-width: 1400px) {
+        padding: calc(1.34375rem + 0.96429vw);
+      }
 
       .banner_texts {
         h6 {
@@ -237,6 +248,12 @@
           font-size: 1.25rem;
           font-weight: 600;
           line-height: 1.2;
+
+          @media (max-width: 576px) {
+            margin-top: 0.9375rem;
+            margin-bottom: 0.9375rem;
+            font-size: 1rem;
+          }
 
           a {
             color: $text_color_dark2;
@@ -268,6 +285,7 @@
 
   .px_4 {
     padding: 0 1.5rem;
+
     @media (max-width: 576px) {
       padding: 0 0;
     }
@@ -287,8 +305,10 @@
     z-index: 1;
     backface-visibility: hidden;
     transition: all 0.5s ease-in-out;
+
     &:hover {
       background-color: rgba(166, 161, 130, 0.6);
+
       &::before {
         top: 0;
         left: 0;

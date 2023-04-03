@@ -1,0 +1,22 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
+.nineth_section {
+  position: relative;
+  padding: 100px 0;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+  @extend %grid_animation;
+
+  .net_lines {
+    padding: 0 8.9375rem;
+
+    @media (max-width: 1400px) {
+      padding: 0 calc(2.01875rem + 7.90714vw);
+    }
+
+    .animated_line {
+      background-color: $back_border_light;
+    }
+  }
+}

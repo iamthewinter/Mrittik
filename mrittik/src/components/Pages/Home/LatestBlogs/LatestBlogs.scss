@@ -3,12 +3,12 @@
 
 .eighth_section {
   background-color: $back_color1;
-  padding: 11.875rem 0;
+  padding: 11.875rem 0 100px 0;
   position: relative;
   z-index: 1;
   transition: 0.3s ease-in-out;
   @media (max-width: 1400px) {
-    padding: calc(2.3125rem + 10.92857vw) 0;
+    padding: calc(2.3125rem + 10.92857vw) 0 100px;
   }
 
   .big_back_word {

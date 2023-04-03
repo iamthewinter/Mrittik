@@ -157,6 +157,10 @@ body.dark {
     }
   }
 
+  footer {
+    background-color: $back_border_dark1;
+  }
+
   .topbtn {
     color: $text_color_grey2;
   }
@@ -341,6 +345,14 @@ body.dark {
     .central_texts {
       h2 {
         color: $text_white;
+      }
+    }
+  }
+  .nineth_section {
+    background-color: $back_border_dark1;
+    .net_lines {
+      .animated_line {
+        background-color: $back_border_dark;
       }
     }
   }

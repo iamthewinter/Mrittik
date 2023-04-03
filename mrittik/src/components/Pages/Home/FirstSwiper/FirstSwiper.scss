@@ -159,11 +159,14 @@
           .swiper-pagination-bullet {
             width: 10px;
             height: 10px;
+            opacity: 0.7;
+            background-color: $text_color_grey3;
           }
 
           .swiper-pagination-bullet-active-main {
             width: 12px;
             height: 12px;
+            opacity: 1;
             background-color: $text_color_grey2;
           }
         }
