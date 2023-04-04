@@ -1,7 +1,8 @@
 @import "../../../Scss/variable";
 @import "../../../Scss/mixin";
 
-main {
+.about_main {
+  position: relative;
   @extend %grid_animation;
 
   .net_lines {

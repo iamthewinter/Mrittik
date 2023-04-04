@@ -1,8 +1,26 @@
 @import "../../../../Scss/variable";
 @import "../../../../Scss/mixin";
 
-.first_section {
-  padding: 230px 0 0 0;
+.mission_section {
+  padding: 230px 0 100px 0;
+  position: relative;
+  z-index: 1;
+
+  .px_5 {
+    padding: 0 3rem;
+
+    @media (max-width: 1400px) {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 0 0rem;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0 12px;
+    }
+  }
 
   .page_heading {
     text-align: center;
@@ -16,6 +34,8 @@
       color: $text_white;
       font-weight: 600;
       margin: 0;
+      color: $text_color_dark1;
+      transition: 0.3s ease-in-out;
     }
 
     p {
@@ -24,7 +44,79 @@
       margin: 1.875rem 0 1rem 0;
       letter-spacing: -1px;
       font-weight: 300;
+      color: $back_border_dark1;
+      transition: 0.3s ease-in-out;
+      @media (max-width: 1400px) {
+        font-size: calc(1.3125rem + 0.64286vw);
+        line-height: calc(1.4375rem + 1.92857vw);
+        margin-top: calc(1.3125rem + 0.64286vw);
+      }
+    }
+  }
+
+  .hidden_line {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 4.375rem;
+
+    &::before {
+      bottom: calc(100% + 50px);
+      height: 3.75rem;
+      content: "";
+      position: absolute;
+      left: calc(50% - 1px);
+      width: 2px;
+      background: $text_color_grey3;
+      @media (max-width: 1400px) {
+        bottom: calc(100% + 50px);
+        height: calc(1.5rem + 2.57143vw);
+      }
+      @media (max-width: 768px) {
+        width: 1px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .col4_adapter {
+    // padding: 0 12px 0 0;
+    @media (max-width: 1400px) {
+      margin-bottom: calc(1.625rem + 3.85714vw);
+    }
+    h3 {
+      position: relative;
+      text-align: right;
+      line-height: 3rem;
+      font-size: 2rem;
+      letter-spacing: -0.2px;
+      font-weight: 700;
+      margin-bottom: 0;
+      @media (max-width: 1400px) {
+        font-size: calc(1.325rem + 0.77143vw);
+        line-height: calc(1.425rem + 1.8vw);
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        background: $text_color_dark1;
+        width: 124px;
+        height: 2px;
+        bottom: -20px;
+        right: 0px;
+      }
+    }
+  }
+  .col6_adapter {
+    // padding: 0 0 0 12px;
+    p {
       color: $text_color_grey3;
+      margin-bottom: 1.25rem;
+      line-height: 26px;
+      font-weight: 400;
     }
   }
 }
