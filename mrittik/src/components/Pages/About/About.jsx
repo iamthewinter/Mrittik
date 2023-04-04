@@ -1,11 +1,14 @@
 import React from "react";
 import OurMission from "./OurMission/OurMission";
 import "../About/About.scss";
+import Video from "./Video/Video";
+import Facts from "./Facts/Facts";
 const About = () => {
   return (
     <div className="about_main">
       <OurMission />
-
+      <Video />
+      <Facts />
       <ul className="net_lines justify-content-between">
         <li className="animated_line"></li>
         <li className="animated_line"></li>
