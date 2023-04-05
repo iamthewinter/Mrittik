@@ -1,0 +1,172 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
+.teamswipe_section {
+  position: relative;
+  padding: 100px 0 50px 0px;
+  z-index: 1;
+
+  .px_5 {
+    padding: 0 3rem;
+
+    @media (max-width: 1400px) {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 0 0rem;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0 6px;
+    }
+  }
+
+  .section_heading {
+    text-align: center;
+    margin-bottom: 5rem;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 1400px) {
+      margin-bottom: calc(1.625rem + 3.85714vw);
+    }
+
+    &::before {
+      height: 3.75rem;
+      content: "";
+      position: absolute;
+      left: calc(50% - 1px);
+      bottom: calc(100% + 25px);
+      width: 2px;
+      background: #999999;
+
+      @media (max-width: 1400px) {
+        height: calc(1.5rem + 2.57143vw);
+      }
+
+      @media (max-width: 768px) {
+        width: 1px;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: $text_color_dark1;
+      font-weight: 700;
+      margin-bottom: 0;
+      transition: 0.3s ease-in-out;
+      @media (max-width: 1400px) {
+        font-size: calc(1.425rem + 1.8vw);
+      }
+    }
+  }
+
+  .swipe_container {
+    .swiper_field {
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+          .member_card {
+            width: 272px;
+            @media (max-width: 1200px) {
+              width: 452px;
+            }
+            @media (max-width: 640px) {
+              width: 75%;
+            }
+            @media (max-width: 576px) {
+              width: 90%;
+            }
+
+            img {
+              width: 100%;
+            }
+
+            h5 {
+              margin: 1.5625rem 0 0 0;
+              line-height: 1.625rem;
+              color: $text_color_dark2;
+              font-size: 1.25rem;
+              font-weight: 600;
+              @media (max-width: 320px) {
+                font-size: 10px;
+              }
+
+              a {
+                color: $text_color_dark2;
+                transition: 0.3s ease-in-out;
+              }
+            }
+
+            h6 {
+              font-size: 0.6875rem;
+              margin-top: 1.25rem;
+              display: inline-block;
+              position: relative;
+              margin-bottom: 0;
+              color: $text_color_dark3;
+              transition: 0.3s ease-in-out;
+              @media (max-width: 320px) {
+                font-size: 8px;
+              }
+
+              &::after {
+                position: absolute;
+                content: "";
+                background: $text_color_grey2;
+                width: 52px;
+                height: 1px;
+                right: -67px;
+                top: 5px;
+                @media (max-width: 320px) {
+                  width: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .swiper-button-prev {
+        font-size: 30px;
+        background-image: url(../../../../assets/right-arrowSharp.png);
+        background-size: 27px;
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: brightness(0) invert(80%);
+        top: 40%;
+        width: 50px;
+        height: 50px;
+        left: -0.7%;
+        &::after {
+          display: none;
+        }
+        @media (max-width: 992px) {
+          left: auto;
+        }
+      }
+
+      .swiper-button-next {
+        font-size: 30px;
+        background-image: url(../../../../assets/right-arrowSharp.png);
+        background-size: 27px;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: brightness(0) invert(80%);
+        top: 40%;
+        left: 96.4%;
+        width: 50px;
+        height: 50px;
+        @media (max-width: 992px) {
+          left: auto;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

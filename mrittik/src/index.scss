@@ -279,6 +279,7 @@ body.dark {
       }
     }
   }
+
   .sixth_section {
     background: $text_color_dark2;
 
@@ -287,22 +288,28 @@ body.dark {
         background-color: $back_border_dark;
       }
     }
+
     .central_texts {
       h2 {
         color: $text_white;
       }
     }
+
     .isotope_btns {
       border-bottom: 0.0625rem solid $text_color_dark3;
+
       button {
         color: $text_white;
+
         &:hover {
           color: $text_color_grey2;
         }
+
         sup {
           color: $text_white;
         }
       }
+
       .activefilter {
         color: $text_color_grey2;
       }
@@ -311,16 +318,20 @@ body.dark {
     .filter_image {
       .works_info {
         background-color: $text_color_dark2;
+
         .banner_texts {
           h6 {
             color: $text_color_grey2;
+
             a {
               color: $text_color_grey2;
             }
           }
+
           h5 {
             a {
               color: $text_white;
+
               &:hover {
                 color: $text_color_grey2;
               }
@@ -336,6 +347,7 @@ body.dark {
       }
     }
   }
+
   .seventh_section {
     .net_lines {
       .animated_line {
@@ -343,26 +355,32 @@ body.dark {
       }
     }
   }
+
   .eighth_section {
     background: $text_color_dark2;
+
     .big_back_word {
       h2 {
         color: $back_border_dark1;
       }
     }
+
     .central_texts {
       h2 {
         color: $text_white;
       }
     }
   }
+
   .nineth_section {
     background-color: $back_border_dark1;
+
     .net_lines {
       .animated_line {
         background-color: $back_border_dark;
       }
     }
+
     .col_adaptor {
       form {
         input,
@@ -370,6 +388,7 @@ body.dark {
           border: none;
           background-color: $text_color_dark1;
           color: $text_color_grey4;
+
           &:focus {
             background-color: $text_color_dark2;
             color: $text_white;
@@ -378,21 +397,25 @@ body.dark {
       }
     }
   }
+
   .about_main {
     .net_lines {
       .animated_line {
         background-color: $back_border_dark;
       }
     }
+
     .mission_section {
       .page_heading {
         h6 {
           color: $text_white;
         }
+
         p {
           color: $text_color_grey3;
         }
       }
+
       .col4_adapter {
         h3 {
           &::after {
@@ -401,6 +424,7 @@ body.dark {
         }
       }
     }
+
     .service_section {
       .col_box {
         h6 {
@@ -437,15 +461,51 @@ body.dark {
         }
       }
     }
+
     .underlined_section {
       background-color: $back_border_dark1;
+
       p {
         span {
           a {
             color: white;
             transition: 0.5s ease-in-out;
+
             &:hover {
               color: $text_color_grey2;
+            }
+          }
+        }
+      }
+    }
+
+    .teamswipe_section {
+      .section_heading {
+        h1 {
+          color: $text_white;
+        }
+      }
+
+      .swipe_container {
+        .swiper_field {
+          .swiper-wrapper {
+            .swiper-slide {
+              .member_card {
+                h5 {
+                  color: $text_white;
+
+                  a {
+                    color: $text_white;
+                    transition: 0.5s ease-in-out;
+                    &:hover {
+                      color: $text_color_grey2;
+                    }
+                  }
+                }
+                h6 {
+                  color: $text_color_grey2;
+                }
+              }
             }
           }
         }
