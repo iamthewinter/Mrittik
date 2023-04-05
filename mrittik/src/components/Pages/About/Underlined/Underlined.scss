@@ -1,0 +1,49 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
+.underlined_section {
+  background-color: $back_color1;
+  padding: 150px 0 220px 0;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+
+  .px_5 {
+    padding: 0 3rem;
+
+    @media (max-width: 1400px) {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 0 0rem;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0 6px;
+    }
+  }
+
+  p {
+    line-height: 5rem;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    text-align: center;
+    color: $text_color_grey3;
+    @media (max-width: 1400px) {
+      font-size: calc(1.525rem + 2.82857vw);
+      line-height: calc(1.625rem + 3.85714vw);
+    }
+
+    span {
+      border-bottom: 1px solid #999999;
+      font-weight: 400;
+      color: #54595f;
+      a {
+        color: $text_color_dark2;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}

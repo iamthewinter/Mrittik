@@ -4,6 +4,7 @@ import "../About/About.scss";
 import Video from "./Video/Video";
 import Facts from "./Facts/Facts";
 import Service from "./Service/Service";
+import Underlined from "./Underlined/Underlined";
 const About = () => {
   return (
     <div className="about_main">
@@ -11,6 +12,7 @@ const About = () => {
       <Video />
       <Facts />
       <Service />
+      <Underlined />
       <ul className="net_lines justify-content-between">
         <li className="animated_line"></li>
         <li className="animated_line"></li>

@@ -437,6 +437,20 @@ body.dark {
         }
       }
     }
+    .underlined_section {
+      background-color: $back_border_dark1;
+      p {
+        span {
+          a {
+            color: white;
+            transition: 0.5s ease-in-out;
+            &:hover {
+              color: $text_color_grey2;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
