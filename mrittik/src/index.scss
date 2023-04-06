@@ -159,6 +159,12 @@ body.dark {
 
   footer {
     background-color: $back_border_dark1;
+
+    .lines_footer_back {
+      .animated_line {
+        background-color: $back_border_dark;
+      }
+    }
   }
 
   .topbtn {
