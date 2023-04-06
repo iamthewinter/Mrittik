@@ -3,6 +3,22 @@
 
 footer {
   padding: 0 4.375rem 4.375rem 4.375rem;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  overflow-y: hidden;
+  @extend %footer_back_anim;
+
+  .lines_footer_back {
+    padding: 0 8.9375rem;
+
+    @media (max-width: 1400px) {
+      padding: 0 calc(2.01875rem + 7.90714vw);
+    }
+
+    .animated_line {
+      background-color: $back_border_light;
+    }
+  }
 
   @media (max-width: 1400px) {
     padding-left: calc(1.5625rem + 3.21429vw);
@@ -23,6 +39,7 @@ footer {
       @media (max-width: 768px) {
         max-width: 768px;
       }
+
       @media (max-width: 690px) {
         max-width: 100%;
       }
@@ -52,6 +69,7 @@ footer {
           transform: rotate(0);
           margin: 0px 0px;
         }
+
         @media (max-width: 370px) {
           font-size: 40px;
         }
@@ -62,15 +80,18 @@ footer {
       position: relative;
       z-index: 3;
       margin: 0 0 0 20px;
+
       @media (max-width: 768px) {
         margin: 0;
       }
+
       @media (max-width: 576px) {
         margin: 1.9rem 0;
       }
 
       .info_field {
         margin-bottom: 1.5625rem;
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -101,9 +122,11 @@ footer {
       z-index: 3;
       position: relative;
       margin: 0 60px 0 0;
+
       @media (max-width: 1400px) {
         margin-right: 0;
       }
+
       @media (max-width: 576px) {
         justify-content: flex-start;
       }
@@ -138,6 +161,7 @@ footer {
               border-radius: 50%;
               margin: 0 10px 0 0;
               cursor: pointer;
+
               &:hover {
                 svg {
                   color: $text_color_grey2;
@@ -155,6 +179,7 @@ footer {
 
         .conditions {
           margin-bottom: 0.625rem;
+
           ul {
             padding: 0;
             margin: 0;
@@ -168,12 +193,14 @@ footer {
               line-height: 1rem;
               font-weight: 500;
               transition: 0.3s ease-in-out;
+
               &:hover {
                 color: $text_white;
               }
             }
           }
         }
+
         .copyright {
           p {
             color: $text_color_grey4;
