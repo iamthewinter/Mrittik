@@ -511,6 +511,25 @@ body.dark {
         }
       }
     }
+    .letsdiscuss_section {
+      background-color: $back_border_dark1;
+
+      .col_adaptor {
+        form {
+          input,
+          textarea {
+            border: none;
+            background-color: $text_color_dark1;
+            color: $text_color_grey4;
+
+            &:focus {
+              background-color: $text_color_dark2;
+              color: $text_white;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

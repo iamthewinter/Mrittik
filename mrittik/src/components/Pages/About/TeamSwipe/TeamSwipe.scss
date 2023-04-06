@@ -18,7 +18,10 @@
     }
 
     @media (max-width: 576px) {
-      padding: 0 6px;
+      padding: 0 12px;
+    }
+    @media (max-width: 480px) {
+      padding: 0 0px;
     }
   }
 
@@ -91,7 +94,9 @@
               font-size: 1.25rem;
               font-weight: 600;
               @media (max-width: 320px) {
-                font-size: 10px;
+                font-size: 8px;
+                line-height: 8px;
+                margin-top: 10px;
               }
 
               a {
@@ -109,7 +114,8 @@
               color: $text_color_dark3;
               transition: 0.3s ease-in-out;
               @media (max-width: 320px) {
-                font-size: 8px;
+                font-size: 7px;
+                margin-top: 5px;
               }
 
               &::after {
@@ -121,7 +127,7 @@
                 right: -67px;
                 top: 5px;
                 @media (max-width: 320px) {
-                  width: 10px;
+                  display: none;
                 }
               }
             }
@@ -147,6 +153,10 @@
         @media (max-width: 992px) {
           left: auto;
         }
+        @media (max-width: 480px) {
+          top: 42%;
+          left: 4%;
+        }
       }
 
       .swiper-button-next {
@@ -162,6 +172,10 @@
         height: 50px;
         @media (max-width: 992px) {
           left: auto;
+        }
+        @media (max-width: 480px) {
+          top: 42%;
+          right: 4%;
         }
         &::after {
           display: none;

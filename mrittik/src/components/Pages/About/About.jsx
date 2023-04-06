@@ -7,6 +7,7 @@ import Service from "./Service/Service";
 import Underlined from "./Underlined/Underlined";
 import TeamSwipe from "./TeamSwipe/TeamSwipe";
 import BlckBoxSwipe from "./BlckBoxSwipe/BlckBoxSwipe";
+import LetsDiscuss from "./LetsDiscuss/LetsDiscuss";
 const About = () => {
   return (
     <div className="about_main">
@@ -17,6 +18,7 @@ const About = () => {
       <Underlined />
       <TeamSwipe />
       <BlckBoxSwipe />
+      <LetsDiscuss />
       <ul className="net_lines justify-content-between">
         <li className="animated_line"></li>
         <li className="animated_line"></li>

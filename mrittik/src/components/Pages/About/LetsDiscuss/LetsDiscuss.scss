@@ -1,0 +1,160 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
+.letsdiscuss_section {
+  position: relative;
+  padding: 100px 0;
+  transition: 0.3s ease-in-out;
+
+  @media (max-width: 576px) {
+    padding: 100px 0 50px 0;
+  }
+
+  .z_index2 {
+    z-index: 2;
+  }
+
+  .px_5 {
+    padding: 0 3rem;
+
+    @media (max-width: 1400px) {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 0 0rem;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0 12px;
+    }
+  }
+
+  .section_heading {
+    @media (max-width: 992px) {
+      margin-bottom: calc(1.625rem + 3.85714vw);
+    }
+
+    h2 {
+      font-size: 3rem;
+      letter-spacing: 0.1875rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+
+      @media (max-width: 1400px) {
+        font-size: calc(1.425rem + 1.8vw);
+      }
+    }
+
+    p {
+      color: $text_color_grey3;
+      line-height: 26px;
+      font-weight: 400;
+    }
+  }
+
+  .col_adaptor {
+    form {
+      input {
+        @extend %input_group;
+      }
+
+      textarea {
+        @extend %input_group;
+        height: 150px;
+        min-height: calc(1.5em + 0.75rem + 2px);
+        padding-top: 1.5rem;
+        resize: vertical;
+      }
+
+      .btn_area {
+        margin-top: 1.5625rem;
+
+        button {
+          background-color: $text_color_grey2;
+          color: $text_white;
+          padding: 0.75rem 2.9375rem;
+          position: relative;
+          width: auto;
+          display: inline-block;
+          font-size: 0.75rem;
+          line-height: 1.5rem;
+          font-weight: 700;
+          text-align: center;
+          border: none;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            background-color: #a6a18299;
+
+            &::before {
+              top: 0;
+              left: 0;
+            }
+          }
+
+          &::before {
+            background-image: url(https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/btn-texture-olive.png);
+            border: 1px solid $text_color_grey2;
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 9px;
+            left: 9px;
+            z-index: -1;
+            transition: left 0.3s ease-out 0.3s, top 0.3s ease-out 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  .our_partners {
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-flow: row wrap;
+
+    @media (max-width: 1400px) {
+      margin-top: calc(1.75rem + 5.14286vw);
+    }
+
+    .partner_logo {
+      display: flex;
+      align-items: center;
+      position: relative;
+      transition: all 0.5s ease-in-out;
+      cursor: crosshair;
+
+      @media (max-width: 992px) {
+        margin: 15px 5px;
+      }
+
+      &:hover {
+        img {
+          opacity: 0;
+
+          &:last-child {
+            opacity: 1;
+          }
+        }
+      }
+
+      img {
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+
+        &:last-child {
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}
