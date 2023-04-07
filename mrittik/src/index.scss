@@ -376,6 +376,34 @@ body.dark {
         color: $text_white;
       }
     }
+
+    .blog_post {
+      &:hover {
+        .blog_content {
+          p {
+            color: $text_white;
+          }
+        }
+      }
+
+      .blog_content {
+        .dates {
+          .post_time {
+            color: $text_color_grey2;
+          }
+        }
+
+        h5 {
+          a {
+            color: $text_white;
+          }
+        }
+
+        p {
+          color: $text_color_grey3;
+        }
+      }
+    }
   }
 
   .nineth_section {
