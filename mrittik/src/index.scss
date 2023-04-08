@@ -431,14 +431,84 @@ body.dark {
       }
     }
   }
+
   .login_main {
     .net_lines {
       .animated_line {
         background-color: $back_border_dark;
       }
     }
+
     .loginpage_backimage {
       background-image: url(https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/bg/bg-2.jpg);
+    }
+
+    .loginform_section {
+      .col_adapatation {
+        h2 {
+          color: $text_white;
+
+          .little_line {
+            &::before {
+              background-color: #212529;
+            }
+          }
+        }
+
+        form {
+          .input_group {
+            input[type="text"],
+            input[type="password"] {
+              background-color: $text_color_dark1;
+              color: $text_color_grey4;
+              border: 1px solid transparent;
+
+              &:focus {
+                background-color: $back_border_dark;
+                border: 1px solid $text_color_grey2;
+                color: $text_white;
+              }
+
+              &::placeholder {
+                color: $text_color_grey3;
+              }
+            }
+
+            input[type="checkbox"] {
+              &:checked {
+                &::after {
+                  filter: brightness(0) invert(1);
+                }
+              }
+            }
+
+            label {
+              color: $text_white;
+              a {
+                color: $text_white;
+                transition: 0.5s ease-in-out;
+                &:hover {
+                  color: $text_color_grey2;
+                }
+              }
+            }
+          }
+
+          .btn_group {
+            button {
+              background-color: $text_white;
+              color: $text_color_dark1;
+              &:hover {
+                background-color: #ffffff99;
+              }
+              &::before {
+                background-image: url(https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/btn-texture-white.png);
+                border-color: $text_white;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
