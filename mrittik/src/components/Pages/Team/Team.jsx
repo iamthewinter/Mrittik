@@ -1,5 +1,6 @@
 import React from "react";
 import TeamHeading from "./TeamHeading/TeamHeading";
+import "../Team/Team.scss";
 
 const Team = () => {
   return (
