@@ -438,23 +438,26 @@ body.dark {
         background-color: $back_border_dark;
       }
     }
-    .map_section {
-      background-color: $text_color_dark2;
-    }
-    .discussproj_section {
-      background-color: $back_border_dark1;
-
-      .col_adaptor {
-        form {
-          input,
-          textarea {
-            border: none;
-            background-color: $text_color_dark1;
-            color: $text_color_grey4;
-
-            &:focus {
-              background-color: $text_color_dark2;
-              color: $text_white;
+    .ourteam_section {
+      .max_width970 {
+        .section_heading {
+          h2 {
+            color: $text_white;
+          }
+        }
+        .team_members {
+          .member_box {
+            h5 {
+              a {
+                color: $text_white;
+                transition: 0.5s ease-in-out;
+                &:hover {
+                  color: $text_color_grey2;
+                }
+              }
+            }
+            h6 {
+              color: $text_color_grey2;
             }
           }
         }
