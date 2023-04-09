@@ -53,6 +53,16 @@ body.dark {
           .link_holder {
             span {
               font-weight: 500;
+              color: $text_white;
+              &:hover {
+                color: $text_color_grey2;
+              }
+              a {
+                color: $text_white;
+                &:hover {
+                  color: $text_color_grey2;
+                }
+              }
             }
           }
 
@@ -60,6 +70,22 @@ body.dark {
             background-color: $back_border_dark1;
 
             .rest_pages {
+              span {
+                color: $text_white;
+
+                &:hover {
+                  color: $text_color_grey2;
+                }
+
+                a {
+                  color: $text_white;
+
+                  &:hover {
+                    color: $text_color_grey2;
+                  }
+                }
+              }
+
               .third_level_head {
                 svg {
                   color: $text_color_grey2;
@@ -70,14 +96,19 @@ body.dark {
                 background-color: $back_border_dark1;
 
                 .rest_pages1 {
-                  &:hover {
-                    span {
-                      color: $text_color_grey2;
-                    }
-                  }
-
                   span {
                     color: $text_white;
+
+                    &:hover {
+                      color: $text_color_grey2;
+                    }
+
+                    a {
+                      color: $text_white;
+                      &:hover {
+                        color: $text_color_grey2;
+                      }
+                    }
                   }
                 }
               }

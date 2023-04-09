@@ -114,7 +114,9 @@ const Nav = () => {
                   </div>
                   <ul className="rest_menu">
                     <li className="rest_pages">
-                      <span>PROJECTS ONE</span>
+                      <span>
+                        <Link to="/projects">PROJECTS ONE</Link>
+                      </span>
                     </li>
                     <li className="rest_pages">
                       <span>PROJECTS TWO</span>
@@ -126,7 +128,9 @@ const Nav = () => {
                       <span>PROJECTS DETAILS</span>
                     </li>
                     <li className="rest_pages">
-                      <span>PROJECTS DETAILS TWO</span>
+                      <span>
+                        <Link to="/project-details">PROJECTS DETAILS TWO</Link>
+                      </span>
                     </li>
                   </ul>
                 </li>
@@ -153,7 +157,9 @@ const Nav = () => {
                           </span>
                         </li>
                         <li className="rest_pages1">
-                          <span>TEAM DETAILS</span>
+                          <span>
+                            <Link to="/team-details">TEAM DETAILS</Link>
+                          </span>
                         </li>
                       </ul>
                     </li>
@@ -167,7 +173,9 @@ const Nav = () => {
                           <span>SERVICE ONE</span>
                         </li>
                         <li className="rest_pages1">
-                          <span>SERVICE TWO</span>
+                          <span>
+                            <Link to="/service">SERVICE TWO</Link>
+                          </span>
                         </li>
                         <li className="rest_pages1">
                           <span>SERVICE DETAILS</span>
@@ -432,7 +440,9 @@ const Nav = () => {
               <div className="lvl_name">GALLERY</div>
             </li>
             <li className="mobile_li2">
-              <div className="link_place">Projects One</div>
+              <div className="link_place">
+                <Link to="/projects">Projects One</Link>
+              </div>
             </li>
             <li className="mobile_li2">
               <div className="link_place">Projects Two</div>
@@ -444,7 +454,9 @@ const Nav = () => {
               <div className="link_place">Project Details</div>
             </li>
             <li className="mobile_li2">
-              <div className="link_place">Project Details Two</div>
+              <div className="link_place">
+                <Link to="/project-details">Project Details Two</Link>
+              </div>
             </li>
           </ul>
           <ul
@@ -534,7 +546,9 @@ const Nav = () => {
               </div>
             </li>
             <li className="mobile_li2">
-              <div className="link_place">Team Details</div>
+              <div className="link_place">
+                <Link to="/team-details">Team Details</Link>
+              </div>
             </li>
           </ul>
           <ul className={lastcarousel2 ? "mobile_lvl2 moving" : "mobile_lvl2"}>
@@ -551,7 +565,9 @@ const Nav = () => {
               <div className="link_place">Service One</div>
             </li>
             <li className="mobile_li2">
-              <div className="link_place">Service Two</div>
+              <div className="link_place">
+                <Link to="/service">Service Two</Link>
+              </div>
             </li>
             <li className="mobile_li2">
               <div className="link_place">Service Details</div>
