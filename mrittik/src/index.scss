@@ -50,18 +50,29 @@ body.dark {
     .col_adapter {
       .main_nav_list {
         .main_nav_heading {
+          &:hover {
+            .link_holder {
+              span {
+                color: $text_color_grey2;
+
+                a {
+                  color: $text_color_grey2;
+                }
+              }
+
+              svg {
+                color: $text_color_grey2;
+              }
+            }
+          }
+
           .link_holder {
             span {
               font-weight: 500;
               color: $text_white;
-              &:hover {
-                color: $text_color_grey2;
-              }
+
               a {
                 color: $text_white;
-                &:hover {
-                  color: $text_color_grey2;
-                }
               }
             }
           }
@@ -70,19 +81,21 @@ body.dark {
             background-color: $back_border_dark1;
 
             .rest_pages {
+              &:hover {
+                span {
+                  color: $text_color_grey2;
+
+                  a {
+                    color: $text_color_grey2;
+                  }
+                }
+              }
+
               span {
                 color: $text_white;
 
-                &:hover {
-                  color: $text_color_grey2;
-                }
-
                 a {
                   color: $text_white;
-
-                  &:hover {
-                    color: $text_color_grey2;
-                  }
                 }
               }
 
@@ -96,18 +109,19 @@ body.dark {
                 background-color: $back_border_dark1;
 
                 .rest_pages1 {
+                  &:hover {
+                    span {
+                      color: $text_color_grey2;
+                      a {
+                        color: $text_color_grey2;
+                      }
+                    }
+                  }
                   span {
                     color: $text_white;
 
-                    &:hover {
-                      color: $text_color_grey2;
-                    }
-
                     a {
                       color: $text_white;
-                      &:hover {
-                        color: $text_color_grey2;
-                      }
                     }
                   }
                 }
@@ -164,8 +178,21 @@ body.dark {
       .menu_pannel {
         .mobile_list {
           .mobile_li {
+            &:hover {
+              .link_place {
+                color: $text_color_grey2;
+                a {
+                  color: $text_color_grey2;
+                }
+              }
+            }
             .link_place {
               border-bottom-color: $border_bottom_color;
+              color: $text_white;
+              a {
+                color: $text_white;
+                transition: 0.3s ease-in-out;
+              }
             }
           }
         }
@@ -178,9 +205,24 @@ body.dark {
 
           .mobile_li2 {
             border-bottom-color: $border_bottom_color;
-
+            &:hover {
+              .link_place {
+                color: $text_color_grey2;
+                a {
+                  color: $text_color_grey2;
+                }
+              }
+            }
             .link_span {
               background-color: $back_btn_color;
+            }
+            .link_place {
+              color: $text_white;
+              transition: 0.3s ease-in-out;
+              a {
+                transition: 0.3s ease-in-out;
+                color: $text_white;
+              }
             }
           }
         }
