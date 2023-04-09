@@ -63,7 +63,7 @@
         letter-spacing: 0px;
         margin-top: 0px;
         margin-bottom: 0px;
-        color: #ffffff;
+        color: $text_white;
 
         @media (max-width: 1400px) {
           font-size: calc(1.425rem + 1.8vw);
@@ -100,6 +100,11 @@
           position: relative;
           color: $text_white;
           padding-right: 0.9375rem;
+          transition: 0.5s ease-in-out;
+
+          &:hover {
+            color: $text_color_grey2;
+          }
 
           &::after {
             content: "\203A";
