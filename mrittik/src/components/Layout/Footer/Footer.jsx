@@ -87,28 +87,36 @@ const Footer = () => {
                         data-aos="fade-up"
                         data-aos-duration="500"
                       >
-                        <Icon icon="mdi:facebook" />
+                        <Link to="#">
+                          <Icon icon="mdi:facebook" />
+                        </Link>
                       </li>
                       <li
                         className="social_net"
                         data-aos="fade-up"
                         data-aos-duration="700"
                       >
-                        <Icon icon="mdi:twitter" />
+                        <Link to="#">
+                          <Icon icon="mdi:twitter" />
+                        </Link>
                       </li>
                       <li
                         className="social_net"
                         data-aos="fade-up"
                         data-aos-duration="900"
                       >
-                        <Icon icon="mdi:instagram" />
+                        <Link to="#">
+                          <Icon icon="mdi:instagram" />
+                        </Link>
                       </li>
                       <li
                         className="social_net"
                         data-aos="fade-up"
                         data-aos-duration="1100"
                       >
-                        <Icon icon="mdi:youtube" />
+                        <Link to="#">
+                          <Icon icon="mdi:youtube" />
+                        </Link>
                       </li>
                     </ul>
                   </div>

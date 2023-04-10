@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 import "../FirstSwiper/FirstSwiper.scss";
 import VanillaTilt from "vanilla-tilt";
+import { Link } from "react-router-dom";
 // import { Icon } from "@iconify/react";
 
 function Tilt(props) {
@@ -74,15 +75,19 @@ const FirstSwiper = () => {
                       />
                       <Tilt className="image_card" options={options}>
                         <h6>CONDOMINIUM</h6>
-                        <h4>Montana young menz club in the city center</h4>
-                        <div className="details_link">
+                        <h4>
+                          <Link to="/project-details">
+                            Montana young menz club in the city center
+                          </Link>
+                        </h4>
+                        <Link to="/project-details" className="details_link">
                           <span className="details_text">VIEW DETAILS</span>
                           <span className="link_animation">
                             <span className="line"></span>
                             <span className="circle"></span>
                             <span className="dot"></span>
                           </span>
-                        </div>
+                        </Link>
                       </Tilt>
                     </div>
                   </div>
@@ -96,15 +101,19 @@ const FirstSwiper = () => {
                       />
                       <Tilt className="image_card" options={options}>
                         <h6>CONDOMINIUM</h6>
-                        <h4>California winter condominium</h4>
-                        <div className="details_link">
+                        <h4>
+                          <Link to="/project-details">
+                            California winter condominium
+                          </Link>
+                        </h4>
+                        <Link to="/project-details" className="details_link">
                           <span className="details_text">VIEW DETAILS</span>
                           <span className="link_animation">
                             <span className="line"></span>
                             <span className="circle"></span>
                             <span className="dot"></span>
                           </span>
-                        </div>
+                        </Link>
                       </Tilt>
                     </div>
                   </div>
@@ -118,15 +127,19 @@ const FirstSwiper = () => {
                       />
                       <Tilt className="image_card" options={options}>
                         <h6>CONDOMINIUM</h6>
-                        <h4>Find your own invintage lake house</h4>
-                        <div className="details_link">
+                        <h4>
+                          <Link to="/project-details">
+                            Find your own invintage lake house
+                          </Link>
+                        </h4>
+                        <Link to="/project-details" className="details_link">
                           <span className="details_text">VIEW DETAILS</span>
                           <span className="link_animation">
                             <span className="line"></span>
                             <span className="circle"></span>
                             <span className="dot"></span>
                           </span>
-                        </div>
+                        </Link>
                       </Tilt>
                     </div>
                   </div>

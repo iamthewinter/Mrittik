@@ -34,7 +34,7 @@ const LatestBlogs = () => {
                   <span className="post_time">OCTOBER 20, 2022</span>
                 </div>
                 <h5>
-                  <Link to="#">
+                  <Link to="/blog">
                     Recent trends in designing space interiors 2019
                   </Link>
                 </h5>
@@ -44,7 +44,7 @@ const LatestBlogs = () => {
                   minim veniam dolor sit amet consecteur.....
                 </p>
                 <div className="details_link">
-                  <Link to="#">
+                  <Link to="/blog">
                     <span className="details_text">VIEW DETAILS</span>
                     <span className="link_animation">
                       <span className="line"></span>
@@ -68,7 +68,7 @@ const LatestBlogs = () => {
                   <span className="post_time">OCTOBER 20, 2022</span>
                 </div>
                 <h5>
-                  <Link to="#">
+                  <Link to="/blog">
                     Space optimization is now considered as art
                   </Link>
                 </h5>
@@ -78,7 +78,7 @@ const LatestBlogs = () => {
                   minim veniam dolor sit amet consecteur.....
                 </p>
                 <div className="details_link">
-                  <Link to="#">
+                  <Link to="/blog">
                     <span className="details_text">VIEW DETAILS</span>
                     <span className="link_animation">
                       <span className="line"></span>
@@ -102,7 +102,9 @@ const LatestBlogs = () => {
                   <span className="post_time">OCTOBER 20, 2022</span>
                 </div>
                 <h5>
-                  <Link to="#">Aga khan Award , 2019 see the best shots</Link>
+                  <Link to="/blog">
+                    Aga khan Award , 2019 see the best shots
+                  </Link>
                 </h5>
                 <p>
                   Lorem ipsum dolor sit amet consecteur adipiscing elitsed do
@@ -110,7 +112,7 @@ const LatestBlogs = () => {
                   minim veniam dolor sit amet consecteur.....
                 </p>
                 <div className="details_link">
-                  <Link to="#">
+                  <Link to="/blog">
                     <span className="details_text">VIEW DETAILS</span>
                     <span className="link_animation">
                       <span className="line"></span>

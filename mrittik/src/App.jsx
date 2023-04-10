@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-// import { useLocation } from 'react-router-dom';
 import Router from "./router";
 import { motion } from "framer-motion";
 import "./App.scss";
-// import { Icon } from "@iconify/react";
 import DarkMode from "./components/DarkMode/DarkMode";
 import "../src/components/DarkMode/DarkMode.scss";
 import ToTopButton from "./components/ToTopButton/ToTopButton";
 import "./components/ToTopButton/ToTopButton.scss";
 
 function App() {
-  // const location = useLocation()
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
