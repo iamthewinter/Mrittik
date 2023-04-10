@@ -522,24 +522,64 @@ body.dark {
       }
     }
 
-    .map_section {
-      background-color: $text_color_dark2;
-    }
+    .ourblogs_section {
+      background: $text_color_dark2;
 
-    .discussproj_section {
-      background-color: $back_border_dark1;
+      .big_back_word {
+        h2 {
+          color: $back_border_dark1;
+        }
+      }
 
-      .col_adaptor {
-        form {
-          input,
-          textarea {
-            border: none;
-            background-color: $text_color_dark1;
-            color: $text_color_grey4;
+      .central_texts {
+        h2 {
+          color: $text_white;
+        }
+      }
 
-            &:focus {
-              background-color: $text_color_dark2;
+      .blog_post {
+        &:hover {
+          .blog_content {
+            p {
               color: $text_white;
+            }
+          }
+        }
+
+        .blog_content {
+          .dates {
+            .post_time {
+              color: $text_color_grey2;
+            }
+          }
+
+          h5 {
+            a {
+              color: $text_white;
+            }
+          }
+
+          p {
+            color: $text_color_grey3;
+          }
+        }
+      }
+
+      .pagination_div {
+        ul {
+          li {
+            a {
+              color: $text_white;
+
+              &:hover {
+                color: $text_color_grey2;
+                background-color: $back_border_dark;
+              }
+            }
+
+            .current_page {
+              color: $text_color_grey2;
+              background-color: $back_border_dark;
             }
           }
         }
