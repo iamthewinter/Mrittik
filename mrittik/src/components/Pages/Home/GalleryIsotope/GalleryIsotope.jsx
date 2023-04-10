@@ -90,10 +90,12 @@ const GalleryIsotope = () => {
                                 <Link to="#">{element.division}</Link>
                               </h6>
                               <h5>
-                                <Link to="#">{element.name}</Link>
+                                <Link to="/project-details">
+                                  {element.name}
+                                </Link>
                               </h5>
                               <div className="details_link">
-                                <Link to="#">
+                                <Link to="/project-details">
                                   <span className="details_text">
                                     VIEW DETAILS
                                   </span>
@@ -128,10 +130,12 @@ const GalleryIsotope = () => {
                                 <Link to="#">{element.division}</Link>
                               </h6>
                               <h5>
-                                <Link to="#">{element.name}</Link>
+                                <Link to="/project-details">
+                                  {element.name}
+                                </Link>
                               </h5>
                               <div className="details_link">
-                                <Link to="#">
+                                <Link to="/project-details">
                                   <span className="details_text">
                                     VIEW DETAILS
                                   </span>
