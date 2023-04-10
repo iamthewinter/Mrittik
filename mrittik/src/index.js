@@ -13,7 +13,14 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   window.location.pathname === "/" ||
     window.location.pathname === "/login" ||
-    window.location.pathname === "/about" ? (
+    window.location.pathname === "/about" ||
+    window.location.pathname === "/team" ||
+    window.location.pathname === "/blog" ||
+    window.location.pathname === "/contacts" ||
+    window.location.pathname === "/projects" ||
+    window.location.pathname === "/service" ||
+    window.location.pathname === "/project-details" ||
+    window.location.pathname === "/team-details" ? (
     <BrowserRouter>
       <Layout>
         <App />

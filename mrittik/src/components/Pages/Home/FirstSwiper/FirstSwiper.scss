@@ -5,6 +5,7 @@
   background-color: $back_color1;
   padding: 190px 0 0px 0;
   position: relative;
+  transition: 0.3s ease-in-out;
 
   @media (max-width: 1300px) {
     padding: 170px 0 0px 0;
@@ -267,6 +268,9 @@
             font-size: 24px;
             font-weight: 700;
             position: relative;
+            a {
+              color: $text_white;
+            }
 
             @media (max-width: 1400px) {
               padding-top: calc(1.75rem + 5.14286vw);

@@ -29,7 +29,7 @@ const Services = () => {
                 className="dark_logo"
               />
               <h4>
-                <Link to="#">URBAN DESIGN</Link>
+                <Link to="/service">URBAN DESIGN</Link>
               </h4>
               <p>
                 Mrittik Architects is a full-service design firm providing
@@ -37,7 +37,7 @@ const Services = () => {
                 architecture.
               </p>
               <div className="arrow_details">
-                <Link to="#">
+                <Link to="/service">
                   <span className="arrow1"></span>
                   <span className="arrow2"></span>
                 </Link>
@@ -62,7 +62,7 @@ const Services = () => {
                 className="dark_logo"
               />
               <h4>
-                <Link to="#">INTERIOR DESIGN</Link>
+                <Link to="/service">INTERIOR DESIGN</Link>
               </h4>
               <p>
                 Mrittik Architects is a full-service design firm providing
@@ -70,7 +70,7 @@ const Services = () => {
                 architecture.
               </p>
               <div className="arrow_details">
-                <Link to="#">
+                <Link to="/service">
                   <span className="arrow1"></span>
                   <span className="arrow2"></span>
                 </Link>
@@ -95,7 +95,7 @@ const Services = () => {
                 className="dark_logo"
               />
               <h4>
-                <Link to="#">LANDSCAPE DESIGN</Link>
+                <Link to="/service">LANDSCAPE DESIGN</Link>
               </h4>
               <p>
                 Mrittik Architects is a full-service design firm providing
@@ -103,7 +103,7 @@ const Services = () => {
                 architecture.
               </p>
               <div className="arrow_details">
-                <Link to="#">
+                <Link to="/service">
                   <span className="arrow1"></span>
                   <span className="arrow2"></span>
                 </Link>
