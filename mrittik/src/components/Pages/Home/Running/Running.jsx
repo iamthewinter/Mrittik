@@ -47,7 +47,9 @@ const Running = () => {
                         <Link to="#">CLUB HOUSE</Link>
                       </h6>
                       <h5>
-                        <Link to="#">Washington young menz club</Link>
+                        <Link to="/project-details">
+                          Washington young menz club
+                        </Link>
                       </h5>
                     </div>
                   </div>
@@ -73,7 +75,9 @@ const Running = () => {
                         <Link to="#">CLUB HOUSE</Link>
                       </h6>
                       <h5>
-                        <Link to="#">California young menz club</Link>
+                        <Link to="/project-details">
+                          California young menz club
+                        </Link>
                       </h5>
                     </div>
                   </div>
@@ -95,7 +99,9 @@ const Running = () => {
                         <Link to="#">CLUB HOUSE</Link>
                       </h6>
                       <h5>
-                        <Link to="#">California young menz club</Link>
+                        <Link to="/project-details">
+                          California young menz club
+                        </Link>
                       </h5>
                     </div>
                   </div>
