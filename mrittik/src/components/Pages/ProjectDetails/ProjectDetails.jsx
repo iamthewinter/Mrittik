@@ -1,7 +1,11 @@
 import React from "react";
 
 const ProjectDetails = () => {
-  return <div>ProjectDetails</div>;
+  return (
+    <>
+      <ProjectDetails />
+    </>
+  );
 };
 
 export default ProjectDetails;
