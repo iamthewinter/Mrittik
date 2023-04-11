@@ -7,6 +7,7 @@
   z-index: 1;
   background-color: $back_color1;
   transition: 0.3s ease-in-out;
+  overflow-x: hidden;
   @extend %grid_animation;
 
   .net_lines {
