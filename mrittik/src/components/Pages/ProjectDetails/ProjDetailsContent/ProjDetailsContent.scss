@@ -1,0 +1,200 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
+.projdetailsinner_section {
+  padding: 100px 0;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+
+  .px_5 {
+    padding: 0 42px;
+
+    @media (max-width: 1400px) {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 0 0rem;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0 12px;
+    }
+  }
+
+  .project_image {
+    margin-bottom: 2.5rem;
+    img {
+      width: 100%;
+    }
+  }
+  .proj_details_inner {
+    .head_text {
+      margin-bottom: 1.875rem;
+      h3 {
+        color: $text_color_dark1;
+        margin-bottom: 1.25rem;
+        line-height: 2.25rem;
+        font-size: 2rem;
+        font-weight: 500;
+        transition: 0.3s ease-in-out;
+      }
+      p {
+        line-height: 26px;
+        font-weight: 400;
+        transition: 0.3s ease-in-out;
+        color: $text_color_dark1;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .houseside_image {
+    position: relative;
+    &:hover {
+      &::before {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      transition: all 0.5s ease-in-out;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .fixed_col {
+    position: sticky;
+    top: 100px;
+    background-color: $back_color1;
+    padding: 30px;
+    transition: 0.3s ease-in-out;
+
+    .pojects_info {
+      h6 {
+        color: $text_color_dark1;
+        font-size: 1.25rem;
+        margin-bottom: 1.125rem;
+        position: relative;
+        display: inline-block;
+        font-weight: 600;
+        padding-bottom: 10px;
+        line-height: 1.2;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+
+        .anim_line {
+          width: 2.5rem;
+          height: 0.0625rem;
+          background: $text_color_grey2;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          overflow: hidden;
+
+          &::before {
+            background-color: $back_color1;
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 0;
+            width: 4px;
+            height: 1px;
+            transition: 0.3s ease-in-out;
+            animation: lineAnim 1.5s linear infinite;
+          }
+
+          @keyframes lineAnim {
+            0% {
+              left: 0;
+              opacity: 0;
+            }
+
+            10% {
+              opacity: 1;
+            }
+
+            100% {
+              left: 100%;
+            }
+          }
+        }
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          padding: 0.4rem 0rem;
+          display: flex;
+          font-size: 1rem;
+          line-height: 1.5;
+
+          &:first-child {
+            padding-top: 0rem;
+          }
+
+          .data {
+            color: $text_color_dark1;
+            flex-shrink: 0;
+            margin-right: 0.75rem;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+          }
+
+          .value {
+            color: $text_color_dark2;
+            font-weight: 400;
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .project_share {
+        margin-top: 2.5rem;
+
+        ul {
+          margin: 0px;
+          padding: 0;
+          list-style-type: none;
+          display: flex;
+          align-items: center;
+
+          li {
+            margin-right: 10px;
+            padding: 0px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+            color: $text_color_dark1;
+
+            a {
+              background-color: $back_border_light;
+              color: $text_color_dark3;
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: 0.3s ease-in-out;
+              svg {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

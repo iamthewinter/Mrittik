@@ -5,6 +5,7 @@
   position: relative;
   padding-top: 140px;
   z-index: 1;
+  overflow-y: hidden;
   @extend %grid_animation;
 
   .net_lines {

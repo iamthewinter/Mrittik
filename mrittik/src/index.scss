@@ -512,6 +512,53 @@ body.dark {
         }
       }
     }
+    .projdetailsinner_section {
+      background-color: $back_border_dark1;
+      .fixed_col {
+        background-color: $back_color_sticky;
+        .pojects_info {
+          h6 {
+            color: $text_white;
+            .anim_line {
+              &::before {
+                background-color: $back_color_sticky;
+              }
+            }
+          }
+          ul {
+            li {
+              .data {
+                color: $text_white;
+              }
+              .value {
+                color: $text_color_grey4;
+              }
+            }
+          }
+          .project_share {
+            ul {
+              li {
+                color: $text_white;
+                a {
+                  background-color: $backforicons;
+                  color: $text_white;
+                }
+              }
+            }
+          }
+        }
+      }
+      .proj_details_inner {
+        .head_text {
+          h3 {
+            color: $text_white;
+          }
+          p {
+            color: $text_color_grey3;
+          }
+        }
+      }
+    }
   }
 }
 
