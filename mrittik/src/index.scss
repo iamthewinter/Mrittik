@@ -504,6 +504,15 @@ body.dark {
       }
     }
   }
+  .projdetails_main {
+    .projdetails_heading {
+      .net_lines {
+        .animated_line {
+          background-color: $back_border_dark;
+        }
+      }
+    }
+  }
 }
 
 code {

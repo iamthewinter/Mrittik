@@ -5,6 +5,19 @@
   position: relative;
   padding-top: 140px;
   z-index: 1;
+  @extend %grid_animation;
+
+  .net_lines {
+    padding: 0 8.9375rem;
+
+    @media (max-width: 1400px) {
+      padding: 0 calc(2.01875rem + 7.90714vw);
+    }
+
+    .animated_line {
+      background-color: $back_border_light;
+    }
+  }
 
   .head_back_image {
     background-repeat: no-repeat;
@@ -55,7 +68,7 @@
       padding: 60px 0;
       position: relative;
 
-      @media (max-width: 420px) {
+      @media (max-width: 992px) {
         padding: 60px 0 10px 0;
       }
 
@@ -77,12 +90,13 @@
 
     .page_location {
       display: flex;
+      flex-wrap: wrap;
       justify-content: flex-end;
       padding: 60px 0;
       position: relative;
       margin-bottom: 0;
 
-      @media (max-width: 420px) {
+      @media (max-width: 992px) {
         justify-content: flex-start;
         padding: 10px 0 60px 0;
       }

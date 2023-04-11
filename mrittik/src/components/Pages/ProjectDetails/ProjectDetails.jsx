@@ -1,10 +1,10 @@
 import React from "react";
-
+import ProjDetailsHead from "./ProjDetailsHead/ProjDetailsHead";
 const ProjectDetails = () => {
   return (
-    <>
-      <ProjectDetails />
-    </>
+    <div className="projdetails_main">
+      <ProjDetailsHead />
+    </div>
   );
 };
 
