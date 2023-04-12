@@ -247,9 +247,12 @@
             top: 22%;
             left: 38%;
           }
-          // @media(max-width:440px) {
-          //   width: 260px;
-          // }
+          @media (max-width: 420px) {
+            left: 36%;
+          }
+          @media (max-width: 370px) {
+            left: 24%;
+          }
 
           // &:hover {
           //   transform: perspective(1000px) rotateX(5deg) rotateY(15deg);
