@@ -1,11 +1,6 @@
 @import "../../../../Scss/variable";
 @import "../../../../Scss/mixin";
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 .teamswipe_section {
   position: relative;
   padding: 100px 0 50px 0px;
@@ -23,7 +18,7 @@ body {
     }
 
     @media (max-width: 576px) {
-      padding: 0 12px;
+      padding: 0 6px;
     }
     @media (max-width: 480px) {
       padding: 0 0px;
@@ -47,7 +42,7 @@ body {
       left: calc(50% - 1px);
       bottom: calc(100% + 25px);
       width: 2px;
-      background: #999999;
+      background: $text_color_grey3;
 
       @media (max-width: 1400px) {
         height: calc(1.5rem + 2.57143vw);

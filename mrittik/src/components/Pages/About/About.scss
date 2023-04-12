@@ -3,6 +3,7 @@
 
 .about_main {
   position: relative;
+  overflow-x: hidden;
   @extend %grid_animation;
 
   .net_lines {

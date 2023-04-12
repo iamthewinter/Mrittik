@@ -17,7 +17,7 @@ const TeamSwipe = () => {
           <h1>Our Team</h1>
         </div>
         <div className="row px_5">
-          <div className="col-xl-12 px-0">
+          <div className="col-xl-12">
             <div className="swipe_container">
               <Swiper
                 slidesPerView={3.4}
