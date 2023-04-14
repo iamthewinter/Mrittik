@@ -558,6 +558,62 @@ body.dark {
           }
         }
       }
+      .project_features {
+        h6 {
+          color: $text_white;
+          span {
+            &::before {
+              background-color: $back_border_dark1;
+            }
+          }
+        }
+        p {
+          color: $text_color_grey3;
+        }
+      }
+      .points_list {
+        li {
+          color: $text_color_grey3;
+        }
+      }
+      .last_texts {
+        p {
+          color: $text_color_grey3;
+        }
+      }
+      .post_end {
+        border-top-color: $back_border_dark;
+      }
+      .related_projects {
+        h6 {
+          color: $text_white;
+          .anim_line {
+            &::before {
+              background-color: $back_border_dark1;
+            }
+          }
+        }
+        .simple_card {
+          .card_texts {
+            h5 {
+              a {
+                color: $text_white;
+                &:hover {
+                  color: $text_color_grey2;
+                }
+              }
+            }
+            h6 {
+              a {
+                color: $text_color_grey3;
+                &:hover {
+                  color: $text_white;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
