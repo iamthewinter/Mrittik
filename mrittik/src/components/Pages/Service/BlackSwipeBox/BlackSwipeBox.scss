@@ -2,11 +2,11 @@
 @import "../../../../Scss/mixin";
 
 .blackswipebox_section {
-  padding: 0 4.375rem 0 4.375rem;
+  padding: 0 4.375rem 100px 4.375rem;
   position: relative;
 
   @media (max-width: 1400px) {
-    padding: 0 calc(1.5625rem + 3.21429vw);
+    padding: 0 calc(1.5625rem + 3.21429vw) 100px;
   }
 
   .short_line {
