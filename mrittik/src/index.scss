@@ -535,6 +535,41 @@ body.dark {
         }
       }
     }
+
+    .servicecards_section {
+      .blog_post {
+        .service_content {
+          h4 {
+            a {
+              color: $text_white;
+              transition: 0.5s ease-in-out;
+
+              &:hover {
+                color: $text_color_grey2;
+              }
+            }
+          }
+
+          p {
+            color: $text_color_grey3;
+          }
+
+          .arrow_details {
+            .arrow1 {
+              background-color: $back_border_light;
+
+              &::before {
+                background-color: $back_border_light;
+              }
+
+              &::after {
+                background-color: $back_border_light;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
