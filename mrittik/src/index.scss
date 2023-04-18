@@ -504,6 +504,13 @@ body.dark {
       }
     }
   }
+  .teamdetails_main {
+    .net_lines {
+      .animated_line {
+        background-color: $back_border_dark;
+      }
+    }
+  }
 }
 
 code {
