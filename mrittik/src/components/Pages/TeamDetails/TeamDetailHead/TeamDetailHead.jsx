@@ -14,7 +14,7 @@ const TeamDetailHead = () => {
           <div className="row justify-content-between align-items-center px_5">
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 px-0">
               <div className="left_head">
-                <h2>Mellisa Johansen</h2>
+                <h2>Ellen Johansen</h2>
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 px-0">

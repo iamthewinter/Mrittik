@@ -310,3 +310,41 @@
   line-height: 1.5;
   border: 1px solid $text_color_grey1;
 }
+
+%animative_undereline {
+  width: 2.5rem;
+  height: 0.0625rem;
+  background: $text_color_grey2;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  &::before {
+    background-color: $text_white;
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 4px;
+    height: 1px;
+    transition: 0.3s ease-in-out;
+    animation: lineAnim 1.5s linear infinite;
+  }
+
+  @keyframes lineAnim {
+    0% {
+      left: 0;
+      opacity: 0;
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    100% {
+      left: 100%;
+    }
+  }
+}
