@@ -1,13 +1,15 @@
 import React from "react";
 import "../ContactHeading/ContactHeading.scss";
 import { Link } from "react-router-dom";
+import HeaderBG from "../../../../assets/header_bg.jpg";
+
 const ContactHeading = () => {
   return (
     <section className="contactpage_heading">
       <div
         className="head_back_image"
         style={{
-          backgroundImage: `url("https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/header_bg.jpg")`,
+          backgroundImage: `url(${HeaderBG})`,
         }}
       >
         <div className="container px_5">
