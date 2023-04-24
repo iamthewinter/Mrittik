@@ -6,6 +6,7 @@ footer {
   position: relative;
   transition: 0.3s ease-in-out;
   overflow-y: hidden;
+  background-color: $text_white;
   @extend %footer_back_anim;
 
   .lines_footer_back {
@@ -47,8 +48,8 @@ footer {
 
     .col_adaptor {
       h2 {
+        z-index: 3;
         position: relative;
-        z-index: 2;
         line-height: 5.25rem;
         font-size: 6.875rem;
         writing-mode: vertical-rl;
