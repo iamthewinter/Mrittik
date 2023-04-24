@@ -3,6 +3,10 @@ import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import "../ProjDetailsContent/ProjDetailsContent.scss";
 import Fancybox from "../../../FancyBox/FancyBox";
+import FancyImg1 from "../../../../assets/3 (4).jpg";
+import FancyImg2 from "../../../../assets/4 (2).jpg";
+import FancyImg3 from "../../../../assets/5 (3).jpg";
+import FancyImg4 from "../../../../assets/6 (2).jpg";
 const ProjDetailsContent = () => {
   return (
     <section className="projdetailsinner_section">
@@ -72,15 +76,9 @@ const ProjDetailsContent = () => {
                 <ul className="gallery_grid">
                   <li className="grid_el">
                     <figure>
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/details/3.jpg"
-                        alt=""
-                      />
+                      <img src={FancyImg1} alt="" />
                       <div className="hover_btn">
-                        <Link
-                          data-fancybox="gallery"
-                          to="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/details/3.jpg"
-                        >
+                        <Link data-fancybox="gallery" to={FancyImg1}>
                           +
                         </Link>
                       </div>
@@ -88,15 +86,9 @@ const ProjDetailsContent = () => {
                   </li>
                   <li className="grid_el">
                     <figure>
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/details/4.jpg"
-                        alt=""
-                      />
+                      <img src={FancyImg2} alt="" />
                       <div className="hover_btn">
-                        <Link
-                          data-fancybox="gallery"
-                          to="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/details/4.jpg"
-                        >
+                        <Link data-fancybox="gallery" to={FancyImg2}>
                           +
                         </Link>
                       </div>
@@ -104,15 +96,9 @@ const ProjDetailsContent = () => {
                   </li>
                   <li className="grid_el">
                     <figure>
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/details/5.jpg"
-                        alt=""
-                      />
+                      <img src={FancyImg3} alt="" />
                       <div className="hover_btn">
-                        <Link
-                          data-fancybox="gallery"
-                          to="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/details/5.jpg"
-                        >
+                        <Link data-fancybox="gallery" to={FancyImg3}>
                           +
                         </Link>
                       </div>
@@ -120,15 +106,9 @@ const ProjDetailsContent = () => {
                   </li>
                   <li className="grid_el">
                     <figure>
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/details/6.jpg"
-                        alt=""
-                      />
+                      <img src={FancyImg4} alt="" />
                       <div className="hover_btn">
-                        <Link
-                          data-fancybox="gallery"
-                          to="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/details/6.jpg"
-                        >
+                        <Link data-fancybox="gallery" to={FancyImg4}>
                           +
                         </Link>
                       </div>
