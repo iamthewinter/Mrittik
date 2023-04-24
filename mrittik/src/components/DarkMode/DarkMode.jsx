@@ -38,16 +38,14 @@ const DarkMode = () => {
       onClick={(e) => switchTheme(e)}
     >
       <div className="mode_switch">
-        {theme === darkTheme ? (
+        {theme === "dark" ? (
           <span>
             <Icon icon="ooui:moon" />
           </span>
-        ) : theme === lightTheme ? (
+        ) : (
           <span>
             <Icon icon="ph:sun-fill" />
           </span>
-        ) : (
-          ""
         )}
       </div>
     </button>

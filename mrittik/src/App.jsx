@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import Router from "./router";
 import { motion } from "framer-motion";
 import "./App.scss";
 import DarkMode from "./components/DarkMode/DarkMode";
 import "../src/components/DarkMode/DarkMode.scss";
 import ToTopButton from "./components/ToTopButton/ToTopButton";
 import "./components/ToTopButton/ToTopButton.scss";
-
+import AnimatedRoutes from "./components/AnimatedRoutes/AnimatedRoutes";
 function App() {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -33,14 +31,10 @@ function App() {
       y: mousePosition.y - 7,
     },
   };
+
   return (
     <main className="App">
-      <Routes>
-        {Router &&
-          Router.map((el) => (
-            <Route key={el.path} path={el.path} element={el.component} />
-          ))}
-      </Routes>
+      <AnimatedRoutes />
       <motion.div
         className="cursor"
         variants={variants}
