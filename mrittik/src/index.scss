@@ -513,7 +513,7 @@ body.dark {
     }
 
     .loginpage_backimage {
-      background-image: url(https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/bg/bg-2.jpg);
+      background-image: url(../src/assets/bg-2.jpg);
     }
 
     .loginform_section {
@@ -575,7 +575,7 @@ body.dark {
                 background-color: #ffffff99;
               }
               &::before {
-                background-image: url(https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/btn-texture-white.png);
+                background-image: url(../src/assets/btn-texture-white.png);
                 border-color: $text_white;
               }
             }
