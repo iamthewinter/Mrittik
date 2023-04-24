@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../BlogHeading/BlogHeading.scss";
+import HeaderBG from "../../../../assets/header_bg.jpg";
 const BlogHeading = () => {
   return (
     <section className="blogpage_heading">
       <div
         className="head_back_image"
         style={{
-          backgroundImage: `url("https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/header_bg.jpg")`,
+          backgroundImage: `url(${HeaderBG})`,
         }}
       >
         <div className="container px_5">

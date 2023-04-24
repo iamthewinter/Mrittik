@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../OurBlogs/OurBlogs.scss";
 import { Icon } from "@iconify/react";
+import BgImg4 from "../../../../assets/bg-4.jpg";
+import BgImg5 from "../../../../assets/bg-5.jpg";
+import BgImg6 from "../../../../assets/bg-6.jpg";
 const OurBlogs = () => {
   return (
     <section className="ourblogs_section">
@@ -111,10 +114,7 @@ const OurBlogs = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 px_12">
             <div className="blog_post">
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/blog/4.jpg"
-                alt=""
-              />
+              <img src={BgImg4} alt="" />
               <div className="blog_content">
                 <h2>04</h2>
                 <div className="dates">
@@ -145,10 +145,7 @@ const OurBlogs = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 px_12">
             <div className="blog_post">
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/blog/5.jpg"
-                alt=""
-              />
+              <img src={BgImg5} alt="" />
               <div className="blog_content">
                 <h2>05</h2>
                 <div className="dates">
@@ -179,10 +176,7 @@ const OurBlogs = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 px_12">
             <div className="blog_post">
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/blog/6.jpg"
-                alt=""
-              />
+              <img src={BgImg6} alt="" />
               <div className="blog_content">
                 <h2>06</h2>
                 <div className="dates">
