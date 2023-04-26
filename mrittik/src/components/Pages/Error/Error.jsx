@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Preloader from "../../Preloader/Preloader";
 import ErrorContent from "./ErrorContent/ErrorContent";
-
+import "../Error/Error.scss";
 const Error = () => {
   const [loading, setLoading] = useState(false);
   useEffect(() => {
@@ -23,6 +23,16 @@ const Error = () => {
           transition={{ delay: 0, duration: 1 }}
         >
           <ErrorContent />
+          <div className="background_pageimg"></div>
+          <ul className="net_lines justify-content-between">
+            <li className="animated_line"></li>
+            <li className="animated_line"></li>
+            <li className="animated_line"></li>
+            <li className="animated_line"></li>
+            <li className="animated_line"></li>
+            <li className="animated_line"></li>
+            <li className="animated_line"></li>
+          </ul>
         </motion.div>
       )}
     </>
