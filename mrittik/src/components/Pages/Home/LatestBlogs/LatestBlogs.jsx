@@ -1,6 +1,9 @@
 import React from "react";
 import "../LatestBlogs/LatestBlogs.scss";
 import { Link } from "react-router-dom";
+import BlogImg1 from "../../../../assets/blog1.jpg";
+import BlogImg2 from "../../../../assets/blog2.jpg";
+import BlogImg3 from "../../../../assets/blog3.jpg";
 const LatestBlogs = () => {
   return (
     <section className="eighth_section">
@@ -24,10 +27,7 @@ const LatestBlogs = () => {
         <div className="row px_5">
           <div className="col-xl-4 col-lg-6 col-md-6 px_12">
             <div className="blog_post">
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/blog/1.jpg"
-                alt=""
-              />
+              <img src={BlogImg1} alt="" />
               <div className="blog_content">
                 <h2>01</h2>
                 <div className="dates">
@@ -58,10 +58,7 @@ const LatestBlogs = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 px_12">
             <div className="blog_post">
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/blog/2.jpg"
-                alt=""
-              />
+              <img src={BlogImg2} alt="" />
               <div className="blog_content">
                 <h2>02</h2>
                 <div className="dates">
@@ -92,10 +89,7 @@ const LatestBlogs = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 px_12">
             <div className="blog_post">
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/blog/3.jpg"
-                alt=""
-              />
+              <img src={BlogImg3} alt="" />
               <div className="blog_content">
                 <h2>03</h2>
                 <div className="dates">
