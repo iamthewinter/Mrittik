@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import VideoThumbnail from "../../../../assets/video_bg.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "../Video/Video.scss";
@@ -27,10 +28,7 @@ const Video = () => {
               >
                 <Icon icon="ph:play-fill" />
               </div>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/bg/video_bg.jpg"
-                alt=""
-              />
+              <img src={VideoThumbnail} alt="" />
             </div>
           </div>
         </div>

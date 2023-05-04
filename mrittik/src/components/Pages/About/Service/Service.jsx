@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../Service/Service.scss";
+import ServiceImg from "../../../../assets/d1.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -18,11 +19,7 @@ const Service = () => {
           >
             <div className="col_box">
               <h6>01</h6>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1.svg"
-                alt=""
-                className="dark_logo"
-              />
+              <img src={ServiceImg} alt="" className="dark_logo" />
               <h4>
                 <Link to="#">URBAN DESIGN</Link>
               </h4>
@@ -46,11 +43,7 @@ const Service = () => {
           >
             <div className="col_box">
               <h6>02</h6>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1.svg"
-                alt=""
-                className="dark_logo"
-              />
+              <img src={ServiceImg} alt="" className="dark_logo" />
               <h4>
                 <Link to="#">INTERIOR DESIGN</Link>
               </h4>
@@ -74,11 +67,7 @@ const Service = () => {
           >
             <div className="col_box">
               <h6>03</h6>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1.svg"
-                alt=""
-                className="dark_logo"
-              />
+              <img src={ServiceImg} alt="" className="dark_logo" />
               <h4>
                 <Link to="#">LANDSCAPE DESIGN</Link>
               </h4>
@@ -102,11 +91,7 @@ const Service = () => {
           >
             <div className="col_box">
               <h6>04</h6>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1.svg"
-                alt=""
-                className="dark_logo"
-              />
+              <img src={ServiceImg} alt="" className="dark_logo" />
               <h4>
                 <Link to="#">LANDSCAPE DESIGN</Link>
               </h4>
@@ -130,11 +115,7 @@ const Service = () => {
           >
             <div className="col_box">
               <h6>05</h6>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1.svg"
-                alt=""
-                className="dark_logo"
-              />
+              <img src={ServiceImg} alt="" className="dark_logo" />
               <h4>
                 <Link to="#">URBAN DESIGN</Link>
               </h4>
@@ -158,11 +139,7 @@ const Service = () => {
           >
             <div className="col_box">
               <h6>06</h6>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1.svg"
-                alt=""
-                className="dark_logo"
-              />
+              <img src={ServiceImg} alt="" className="dark_logo" />
               <h4>
                 <Link to="#">INTERIOR DESIGN</Link>
               </h4>

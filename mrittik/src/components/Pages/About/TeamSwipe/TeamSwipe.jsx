@@ -1,6 +1,11 @@
 import React from "react";
 import "../TeamSwipe/TeamSwipe.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Team1 from "../../../../assets/team1.jpg";
+import Team2 from "../../../../assets/team2.jpg";
+import Team3 from "../../../../assets/team3.jpg";
+import Team4 from "../../../../assets/team4.jpg";
+import Team5 from "../../../../assets/team5.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
@@ -53,10 +58,7 @@ const TeamSwipe = () => {
               >
                 <SwiperSlide>
                   <div className="member_card">
-                    <img
-                      src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/2.jpg"
-                      alt=""
-                    />
+                    <img src={Team2} alt="" />
                     <h5>
                       <Link to="#">Mellisa Johansen</Link>
                     </h5>
@@ -65,10 +67,7 @@ const TeamSwipe = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="member_card">
-                    <img
-                      src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/3.jpg"
-                      alt=""
-                    />
+                    <img src={Team3} alt="" />
                     <h5>
                       <Link to="#">Dave Crossby</Link>
                     </h5>
@@ -77,10 +76,7 @@ const TeamSwipe = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="member_card">
-                    <img
-                      src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/4.jpg"
-                      alt=""
-                    />
+                    <img src={Team4} alt="" />
                     <h5>
                       <Link to="#">Hazel R. Grace</Link>
                     </h5>
@@ -89,10 +85,7 @@ const TeamSwipe = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="member_card">
-                    <img
-                      src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/5.jpg"
-                      alt=""
-                    />
+                    <img src={Team5} alt="" />
                     <h5>
                       <Link to="#">Benjamin Brook</Link>
                     </h5>
@@ -101,10 +94,7 @@ const TeamSwipe = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="member_card">
-                    <img
-                      src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/1.jpg"
-                      alt=""
-                    />
+                    <img src={Team1} alt="" />
                     <h5>
                       <Link to="#">Michel Robertson</Link>
                     </h5>
@@ -113,10 +103,7 @@ const TeamSwipe = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="member_card">
-                    <img
-                      src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/2.jpg"
-                      alt=""
-                    />
+                    <img src={Team2} alt="" />
                     <h5>
                       <Link to="#">Mellisa Johansen</Link>
                     </h5>
@@ -125,10 +112,7 @@ const TeamSwipe = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="member_card">
-                    <img
-                      src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/3.jpg"
-                      alt=""
-                    />
+                    <img src={Team3} alt="" />
                     <h5>
                       <Link to="#">Dave Crossby</Link>
                     </h5>
@@ -137,10 +121,7 @@ const TeamSwipe = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="member_card">
-                    <img
-                      src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/4.jpg"
-                      alt=""
-                    />
+                    <img src={Team4} alt="" />
                     <h5>
                       <Link to="#">Hazel R. Grace</Link>
                     </h5>
@@ -149,10 +130,7 @@ const TeamSwipe = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="member_card">
-                    <img
-                      src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/5.jpg"
-                      alt=""
-                    />
+                    <img src={Team5} alt="" />
                     <h5>
                       <Link to="#">Benjamin Brook</Link>
                     </h5>
@@ -161,10 +139,7 @@ const TeamSwipe = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="member_card">
-                    <img
-                      src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/1.jpg"
-                      alt=""
-                    />
+                    <img src={Team1} alt="" />
                     <h5>
                       <Link to="#">Michel Robertson</Link>
                     </h5>

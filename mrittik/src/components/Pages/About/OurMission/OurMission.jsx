@@ -1,5 +1,6 @@
 import React from "react";
 import OurMissionStyle from "../OurMission/OurMission.module.scss";
+import AboutBigImage from "../../../../assets/about_bg.jpg";
 const OurMission = () => {
   return (
     <section className={`mission_section ${OurMissionStyle.mission_section}`}>
@@ -18,10 +19,7 @@ const OurMission = () => {
         <div className={`row ${OurMissionStyle.px_5}`}>
           <div className="col-xl-12 px-0">
             <div className={OurMissionStyle.hidden_line}>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/bg/about_bg.jpg"
-                alt=""
-              />
+              <img src={AboutBigImage} alt="" />
             </div>
           </div>
         </div>

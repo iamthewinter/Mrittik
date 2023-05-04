@@ -1,11 +1,17 @@
 import React from "react";
 import "../Facts/Facts.scss";
+import SectionBg from "../../../../assets/section-bg-1.jpg";
+import FactIcon1 from "../../../../assets/fact1.png";
+import FactIcon2 from "../../../../assets/fact2.png";
+import FactIcon3 from "../../../../assets/fact3.png";
+import FactIcon4 from "../../../../assets/fact4.png";
+
 const Facts = () => {
   return (
     <section
       className="facts_section"
       style={{
-        backgroundImage: `url("https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/bg/bg-1.jpg")`,
+        backgroundImage: `url(${SectionBg})`,
       }}
     >
       <div className="container px_5">
@@ -14,10 +20,7 @@ const Facts = () => {
             <div className="achivements_inner">
               <div className="achievement1">
                 <div className="achive_img">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/fact-1.png"
-                    alt=""
-                  />
+                  <img src={FactIcon1} alt="" />
                 </div>
                 <div className="achive_texts">
                   <p>DESIGN DRAWING</p>
@@ -28,10 +31,7 @@ const Facts = () => {
               </div>
               <div className="achievement1">
                 <div className="achive_img">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/fact-2.png"
-                    alt=""
-                  />
+                  <img src={FactIcon2} alt="" />
                 </div>
                 <div className="achive_texts">
                   <p>PROJECT COMPLETED</p>
@@ -42,10 +42,7 @@ const Facts = () => {
               </div>
               <div className="achievement1">
                 <div className="achive_img">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/fact-3.png"
-                    alt=""
-                  />
+                  <img src={FactIcon3} alt="" />
                 </div>
                 <div className="achive_texts">
                   <p>DESIGN AWARD</p>
@@ -56,10 +53,7 @@ const Facts = () => {
               </div>
               <div className="achievement1">
                 <div className="achive_img">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/fact-4.png"
-                    alt=""
-                  />
+                  <img src={FactIcon4} alt="" />
                 </div>
                 <div className="achive_texts">
                   <p>PROJECT RUNNING</p>
