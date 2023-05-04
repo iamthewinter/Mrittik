@@ -523,8 +523,6 @@ body.dark {
     }
 
     .ourblogs_section {
-      background: $text_color_dark2;
-
       .big_back_word {
         h2 {
           color: $back_border_dark1;
@@ -583,6 +581,9 @@ body.dark {
             }
           }
         }
+      }
+      .separating_footerspace {
+        background-color: $back_border_dark1;
       }
     }
   }

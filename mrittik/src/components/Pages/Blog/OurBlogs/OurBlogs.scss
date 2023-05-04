@@ -2,13 +2,13 @@
 @import "../../../../Scss/mixin";
 
 .ourblogs_section {
-  padding: 100px 0;
+  padding: 100px 0 0;
   position: relative;
   z-index: 1;
   transition: 0.3s ease-in-out;
 
   @media (max-width: 1400px) {
-    padding: calc(2.3125rem + 10.92857vw) 0 100px;
+    padding: calc(2.3125rem + 10.92857vw) 0 0px;
   }
 
   .big_back_word {
@@ -36,7 +36,7 @@
   }
 
   .px_5 {
-    padding: 0 3rem;
+    padding: 0 3.6rem;
     margin: 0.1rem;
 
     @media (max-width: 1400px) {
@@ -298,6 +298,32 @@
           background-color: $text_color_grey2;
           color: $text_white;
           transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .separating_footerspace {
+    height: 70px;
+    margin-top: 100px;
+    position: relative;
+    z-index: -1;
+    @media (max-width: 1200px) {
+      margin-top: 70px;
+    }
+    @extend %grid_animation;
+
+    .net_lines {
+      padding: 0 8.9375rem;
+
+      @media (max-width: 1400px) {
+        padding: 0 calc(2.01875rem + 7.90714vw);
+      }
+
+      .animated_line {
+        background-color: $back_border_light;
+        &::before {
+          display: none;
         }
       }
     }
