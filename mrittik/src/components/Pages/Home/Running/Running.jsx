@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import "./Running.scss";
 import { Link } from "react-router-dom";
+import RunImg1 from "../../../../assets/running1.jpg";
+import RunImg2 from "../../../../assets/running2.jpg";
+import RunImg3 from "../../../../assets/running3.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Running = () => {
@@ -37,10 +40,7 @@ const Running = () => {
                 data-aos-duration="1000"
               >
                 <div className="thumb">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/image_box/3.jpg"
-                    alt=""
-                  />
+                  <img src={RunImg1} alt="" />
                   <div className="works_info">
                     <div className="works_texts">
                       <h6>
@@ -65,10 +65,7 @@ const Running = () => {
                 data-aos-duration="1000"
               >
                 <div className="thumb">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/image_box/2.jpg"
-                    alt=""
-                  />
+                  <img src={RunImg2} alt="" />
                   <div className="works_info">
                     <div className="works_texts">
                       <h6>
@@ -89,10 +86,7 @@ const Running = () => {
                 data-aos-duration="1500"
               >
                 <div className="thumb">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/image_box/1.jpg"
-                    alt=""
-                  />
+                  <img src={RunImg3} alt="" />
                   <div className="works_info">
                     <div className="works_texts">
                       <h6>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo1 from "../../../assets/logo-dark.svg";
-// import Logo2 from "../../../assets/logo-light.svg";
+import LogoDarkLarge from "../../../assets/logo-dark-lg.svg";
 import "../Navbar/Nav.scss";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
@@ -284,10 +284,7 @@ const Nav = () => {
         <div className="logo_field">
           <div className="info_logo">
             <Link to="/">
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/logo-dark-lg.svg"
-                alt=""
-              />
+              <img src={LogoDarkLarge} alt="" />
             </Link>
           </div>
         </div>
@@ -336,10 +333,7 @@ const Nav = () => {
           <div className="big_logo">
             <Link to="/">
               {" "}
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/logo-dark-lg.svg"
-                alt=""
-              />
+              <img src={LogoDarkLarge} alt="" />
             </Link>
           </div>
         </div>
