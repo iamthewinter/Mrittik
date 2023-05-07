@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./Services.scss";
 import { Link } from "react-router-dom";
+import LogoLight from "../../../../assets/d1-light.svg";
+import LogoDark from "../../../../assets/d1.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Services = () => {
@@ -18,16 +20,8 @@ const Services = () => {
           >
             <div className="col_box">
               <h6>01</h6>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1-light.svg"
-                alt=""
-                className="light_logo"
-              />
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1.svg"
-                alt=""
-                className="dark_logo"
-              />
+              <img src={LogoLight} alt="" className="light_logo" />
+              <img src={LogoDark} alt="" className="dark_logo" />
               <h4>
                 <Link to="/service">URBAN DESIGN</Link>
               </h4>
@@ -51,16 +45,8 @@ const Services = () => {
           >
             <div className="col_box">
               <h6>02</h6>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1-light.svg"
-                alt=""
-                className="light_logo"
-              />
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1.svg"
-                alt=""
-                className="dark_logo"
-              />
+              <img src={LogoLight} alt="" className="light_logo" />
+              <img src={LogoDark} alt="" className="dark_logo" />
               <h4>
                 <Link to="/service">INTERIOR DESIGN</Link>
               </h4>
@@ -84,16 +70,8 @@ const Services = () => {
           >
             <div className="col_box">
               <h6>03</h6>
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1-light.svg"
-                alt=""
-                className="light_logo"
-              />
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/icon_box/d1.svg"
-                alt=""
-                className="dark_logo"
-              />
+              <img src={LogoLight} alt="" className="light_logo" />
+              <img src={LogoDark} alt="" className="dark_logo" />
               <h4>
                 <Link to="/service">LANDSCAPE DESIGN</Link>
               </h4>
