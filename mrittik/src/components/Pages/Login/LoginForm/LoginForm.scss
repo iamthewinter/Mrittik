@@ -2,7 +2,7 @@
 @import "../../../../Scss/mixin";
 
 .loginform_section {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   position: relative;
   z-index: 1;
 
@@ -35,6 +35,7 @@
       padding-bottom: 10px;
       overflow: hidden;
       transition: 0.3s ease-in-out;
+
       @media (max-width: 1400px) {
         font-size: calc(1.425rem + 1.8vw);
       }
@@ -139,6 +140,7 @@
           color: $text_color_dark2;
           margin: 0px;
           transition: 0.3s ease-in-out;
+
           a {
             color: $text_color_dark2;
             transition: 0.3s ease-in-out;
@@ -191,6 +193,29 @@
             z-index: -1;
             transition: left 0.3s ease-out 0.3s, top 0.3s ease-out 0.3s;
           }
+        }
+      }
+    }
+  }
+
+  .space_separator {
+    height: 70px;
+    background-color: $text_white;
+    margin-top: 100px;
+    position: relative;
+    @extend %grid_animation;
+
+    .net_lines {
+      padding: 0 8.9375rem;
+
+      @media (max-width: 1400px) {
+        padding: 0 calc(2.01875rem + 7.90714vw);
+      }
+
+      .animated_line {
+        background-color: $back_border_light;
+        &::before {
+          display: none;
         }
       }
     }

@@ -47,6 +47,17 @@ const LoginForm = () => {
           </div>
         </div>
       </div>
+      <div className="space_separator">
+        <ul className="net_lines justify-content-between">
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+        </ul>
+      </div>
     </section>
   );
 };

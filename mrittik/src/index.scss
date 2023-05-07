@@ -112,11 +112,13 @@ body.dark {
                   &:hover {
                     span {
                       color: $text_color_grey2;
+
                       a {
                         color: $text_color_grey2;
                       }
                     }
                   }
+
                   span {
                     color: $text_white;
 
@@ -181,14 +183,17 @@ body.dark {
             &:hover {
               .link_place {
                 color: $text_color_grey2;
+
                 a {
                   color: $text_color_grey2;
                 }
               }
             }
+
             .link_place {
               border-bottom-color: $border_bottom_color;
               color: $text_white;
+
               a {
                 color: $text_white;
                 transition: 0.3s ease-in-out;
@@ -205,20 +210,25 @@ body.dark {
 
           .mobile_li2 {
             border-bottom-color: $border_bottom_color;
+
             &:hover {
               .link_place {
                 color: $text_color_grey2;
+
                 a {
                   color: $text_color_grey2;
                 }
               }
             }
+
             .link_span {
               background-color: $back_btn_color;
             }
+
             .link_place {
               color: $text_white;
               transition: 0.3s ease-in-out;
+
               a {
                 transition: 0.3s ease-in-out;
                 color: $text_white;
@@ -557,9 +567,11 @@ body.dark {
 
             label {
               color: $text_white;
+
               a {
                 color: $text_white;
                 transition: 0.5s ease-in-out;
+
                 &:hover {
                   color: $text_color_grey2;
                 }
@@ -571,14 +583,29 @@ body.dark {
             button {
               background-color: $text_white;
               color: $text_color_dark1;
+
               &:hover {
                 background-color: #ffffff99;
               }
+
               &::before {
                 background-image: url(../src/assets/btn-texture-white.png);
                 border-color: $text_white;
               }
             }
+          }
+        }
+      }
+
+      .space_separator {
+        height: 70px;
+        background-color: $back_border_dark1;
+        // background: rgb(27, 27, 27);
+        // background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgba(33, 33, 33, 0.756827731092437) 50%, rgba(33, 33, 33, 1) 100%);
+        margin-top: 100px;
+        .net_lines {
+          .animated_line {
+            background-color: $back_border_dark;
           }
         }
       }
