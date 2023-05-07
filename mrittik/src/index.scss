@@ -112,11 +112,13 @@ body.dark {
                   &:hover {
                     span {
                       color: $text_color_grey2;
+
                       a {
                         color: $text_color_grey2;
                       }
                     }
                   }
+
                   span {
                     color: $text_white;
 
@@ -181,14 +183,17 @@ body.dark {
             &:hover {
               .link_place {
                 color: $text_color_grey2;
+
                 a {
                   color: $text_color_grey2;
                 }
               }
             }
+
             .link_place {
               border-bottom-color: $border_bottom_color;
               color: $text_white;
+
               a {
                 color: $text_white;
                 transition: 0.3s ease-in-out;
@@ -205,20 +210,25 @@ body.dark {
 
           .mobile_li2 {
             border-bottom-color: $border_bottom_color;
+
             &:hover {
               .link_place {
                 color: $text_color_grey2;
+
                 a {
                   color: $text_color_grey2;
                 }
               }
             }
+
             .link_span {
               background-color: $back_btn_color;
             }
+
             .link_place {
               color: $text_white;
               transition: 0.3s ease-in-out;
+
               a {
                 transition: 0.3s ease-in-out;
                 color: $text_white;
@@ -511,6 +521,7 @@ body.dark {
         background-color: $back_border_dark;
       }
     }
+
     .ourteam_section {
       .max_width970 {
         .section_heading {
@@ -518,22 +529,29 @@ body.dark {
             color: $text_white;
           }
         }
+
         .team_members {
           .member_box {
             h5 {
               a {
                 color: $text_white;
                 transition: 0.5s ease-in-out;
+
                 &:hover {
                   color: $text_color_grey2;
                 }
               }
             }
+
             h6 {
               color: $text_color_grey2;
             }
           }
         }
+      }
+
+      .footer_upspace {
+        background-color: $back_border_dark1;
       }
     }
   }

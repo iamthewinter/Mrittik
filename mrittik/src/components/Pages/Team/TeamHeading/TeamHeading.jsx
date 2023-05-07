@@ -1,5 +1,6 @@
 import React from "react";
 import "../TeamHeading/TeamHeading.scss";
+import HeaderBG from "../../../../assets/header_bg.jpg";
 import { Link } from "react-router-dom";
 
 const TeamHeading = () => {
@@ -8,7 +9,7 @@ const TeamHeading = () => {
       <div
         className="head_back_image"
         style={{
-          backgroundImage: `url("https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/header_bg.jpg")`,
+          backgroundImage: `url(${HeaderBG})`,
         }}
       >
         <div className="container px_5">

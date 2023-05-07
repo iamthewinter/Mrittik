@@ -5,56 +5,47 @@ import { Link } from "react-router-dom";
 export const team = [
   {
     id: Math.floor(Math.random() * 1000),
-    image:
-      "https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/1.jpg",
+    image: require("../../../../assets/team1.jpg"),
     name: "Michel Robertson",
   },
   {
     id: Math.floor(Math.random() * 1000),
-    image:
-      "https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/2.jpg",
+    image: require("../../../../assets/team2.jpg"),
     name: "Mellisa Johansen",
   },
   {
     id: Math.floor(Math.random() * 1000),
-    image:
-      "https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/3.jpg",
+    image: require("../../../../assets/team3.jpg"),
     name: "Dave Crossby",
   },
   {
     id: Math.floor(Math.random() * 1000),
-    image:
-      "https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/4.jpg",
+    image: require("../../../../assets/team4.jpg"),
     name: "Hazel R. Grace",
   },
   {
     id: Math.floor(Math.random() * 1000),
-    image:
-      "https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/5.jpg",
+    image: require("../../../../assets/team5.jpg"),
     name: "Benjamin Brook",
   },
   {
     id: Math.floor(Math.random() * 1000),
-    image:
-      "https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/6.jpg",
+    image: require("../../../../assets/team6.jpg"),
     name: "Ellen Johansen",
   },
   {
     id: Math.floor(Math.random() * 1000),
-    image:
-      "https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/7.jpg",
+    image: require("../../../../assets/team7.jpg"),
     name: "Garrison Gardner",
   },
   {
     id: Math.floor(Math.random() * 1000),
-    image:
-      "https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/8.jpg",
+    image: require("../../../../assets/team8.jpg"),
     name: "Ashly Graham Zen",
   },
   {
     id: Math.floor(Math.random() * 1000),
-    image:
-      "https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/9.jpg",
+    image: require("../../../../assets/team9.jpg"),
     name: "Austin Gilbert",
   },
 ];
@@ -102,6 +93,17 @@ const OurTeam = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="footer_upspace">
+        <ul className="net_lines justify-content-between">
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+        </ul>
       </div>
     </section>
   );
