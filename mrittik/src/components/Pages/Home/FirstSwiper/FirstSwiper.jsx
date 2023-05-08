@@ -7,6 +7,9 @@ import { Pagination, Navigation } from "swiper";
 import "../FirstSwiper/FirstSwiper.scss";
 import VanillaTilt from "vanilla-tilt";
 import { Link } from "react-router-dom";
+import FirstSwiperImg from "../../../../assets/14.jpg";
+import SecondSwiperImg from "../../../../assets/5.jpg";
+import ThirdSwiperImg from "../../../../assets/8.jpg";
 // import { Icon } from "@iconify/react";
 
 function Tilt(props) {
@@ -69,10 +72,7 @@ const FirstSwiper = () => {
                 <SwiperSlide>
                   <div className="slider_inner">
                     <div className="slider_img">
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/slider/14.jpg"
-                        alt=""
-                      />
+                      <img src={FirstSwiperImg} alt="" />
                       <Tilt className="image_card" options={options}>
                         <h6>CONDOMINIUM</h6>
                         <h4>
@@ -95,10 +95,7 @@ const FirstSwiper = () => {
                 <SwiperSlide>
                   <div className="slider_inner">
                     <div className="slider_img">
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/slider/5.jpg"
-                        alt=""
-                      />
+                      <img src={SecondSwiperImg} alt="" />
                       <Tilt className="image_card" options={options}>
                         <h6>CONDOMINIUM</h6>
                         <h4>
@@ -121,10 +118,7 @@ const FirstSwiper = () => {
                 <SwiperSlide>
                   <div className="slider_inner">
                     <div className="slider_img">
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/slider/8.jpg"
-                        alt=""
-                      />
+                      <img src={ThirdSwiperImg} alt="" />
                       <Tilt className="image_card" options={options}>
                         <h6>CONDOMINIUM</h6>
                         <h4>
