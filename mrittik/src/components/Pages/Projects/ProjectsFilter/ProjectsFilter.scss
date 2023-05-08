@@ -3,7 +3,7 @@
 
 .projectsfilter_section {
   position: relative;
-  padding: 100px 0px 120px 0px;
+  padding: 100px 0px 0px 0px;
   z-index: 1;
   transition: 0.3s ease-in-out;
   overflow: hidden;
@@ -204,6 +204,7 @@
     position: relative;
     z-index: 1;
     display: block;
+
     @media (max-width: 992px) {
       margin: 30px 0 0 0;
     }
@@ -233,7 +234,7 @@
       }
 
       &::before {
-        background-image: url(https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/btn-texture-gray.png);
+        background-image: url(../../../../assets/btn-texture-gray.png);
         border: 1px solid $text_color_dark3;
         content: "";
         position: absolute;
@@ -244,6 +245,36 @@
         left: 9px;
         z-index: -1;
         transition: left 0.3s ease-out 0.3s, top 0.3s ease-out 0.3s;
+      }
+    }
+  }
+
+  .footer_topspace {
+    position: relative;
+    height: 70px;
+    margin-top: 120px;
+    transition: 0.3s ease-in-out;
+    background-color: $text_white;
+
+    @media (max-width: 1400px) {
+      height: calc(1.5625rem + 3.21429vw);
+    }
+
+    @extend %grid_animation;
+
+    .net_lines {
+      padding: 0 8.9375rem;
+
+      @media (max-width: 1400px) {
+        padding: 0 calc(2.01875rem + 7.90714vw);
+      }
+
+      .animated_line {
+        background-color: $back_border_light;
+
+        &::before {
+          display: none;
+        }
       }
     }
   }

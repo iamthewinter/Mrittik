@@ -122,6 +122,17 @@ const ProjectsFilter = () => {
           </AnimatePresence>
         </div>
       </div>
+      <div className="footer_topspace">
+        <ul className="net_lines justify-content-between">
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+        </ul>
+      </div>
     </section>
   );
 };
