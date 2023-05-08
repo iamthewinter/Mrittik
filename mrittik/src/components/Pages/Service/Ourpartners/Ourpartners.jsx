@@ -1,5 +1,15 @@
 import React from "react";
 import "../Ourpartners/Ourpartners.scss";
+import PartnerDark1 from "../../../../assets/partner_dark1.svg";
+import PartnerDark2 from "../../../../assets/partner_dark2.svg";
+import PartnerDark3 from "../../../../assets/partner_dark3.svg";
+import PartnerDark4 from "../../../../assets/partner_dark4.svg";
+import PartnerDark5 from "../../../../assets/partner_dark5.svg";
+import PartnerOlive1 from "../../../../assets/partner_olive1.svg";
+import PartnerOlive2 from "../../../../assets/partner_olive2.svg";
+import PartnerOlive3 from "../../../../assets/partner_olive3.svg";
+import PartnerOlive4 from "../../../../assets/partner_olive4.svg";
+import PartnerOlive5 from "../../../../assets/partner_olive5.svg";
 const Ourpartners = () => {
   return (
     <section className="ourpartners_section">
@@ -15,54 +25,24 @@ const Ourpartners = () => {
       <div className="container">
         <div className="our_partners px_5">
           <div className="partner_logo">
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/partner/5.svg"
-              alt=""
-            />
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/partner/55.svg"
-              alt=""
-            />
+            <img src={PartnerDark1} alt="" />
+            <img src={PartnerOlive1} alt="" />
           </div>
           <div className="partner_logo">
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/partner/2.svg"
-              alt=""
-            />
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/partner/22.svg"
-              alt=""
-            />
+            <img src={PartnerDark2} alt="" />
+            <img src={PartnerOlive2} alt="" />
           </div>
           <div className="partner_logo">
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/partner/4.svg"
-              alt=""
-            />
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/partner/44.svg"
-              alt=""
-            />
+            <img src={PartnerDark3} alt="" />
+            <img src={PartnerOlive3} alt="" />
           </div>
           <div className="partner_logo">
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/partner/1.svg"
-              alt=""
-            />
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/partner/11.svg"
-              alt=""
-            />
+            <img src={PartnerDark4} alt="" />
+            <img src={PartnerOlive4} alt="" />
           </div>
           <div className="partner_logo">
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/partner/3.svg"
-              alt=""
-            />
-            <img
-              src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/partner/33.svg"
-              alt=""
-            />
+            <img src={PartnerDark5} alt="" />
+            <img src={PartnerOlive5} alt="" />
           </div>
         </div>
       </div>
