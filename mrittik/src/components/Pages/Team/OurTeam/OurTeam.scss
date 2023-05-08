@@ -97,6 +97,11 @@
     margin-top: 50px;
     transition: 0.3s ease-in-out;
     position: relative;
+
+    @media (max-width: 1400px) {
+      height: calc(1.5625rem + 3.21429vw);
+    }
+
     @extend %grid_animation;
 
     .net_lines {
