@@ -6,9 +6,9 @@ import { Icon } from "@iconify/react";
 import BgImg1 from "../../../../assets/blog1.jpg";
 import BgImg2 from "../../../../assets/blog2.jpg";
 import BgImg3 from "../../../../assets/blog3.jpg";
-import BgImg4 from "../../../../assets/bg-4.jpg";
-import BgImg5 from "../../../../assets/bg-5.jpg";
-import BgImg6 from "../../../../assets/bg-6.jpg";
+import BgImg4 from "../../../../assets/blog4.jpg";
+import BgImg5 from "../../../../assets/blog5.jpg";
+import BgImg6 from "../../../../assets/blog6.jpg";
 const OurBlogs = () => {
   return (
     <section className="ourblogs_section">
