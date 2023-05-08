@@ -203,6 +203,12 @@
     background-color: $text_white;
     margin-top: 100px;
     position: relative;
+    transition: 0.3s ease-in-out;
+
+    @media (max-width: 1400px) {
+      height: calc(1.5625rem + 3.21429vw);
+    }
+
     @extend %grid_animation;
 
     .net_lines {
@@ -214,6 +220,7 @@
 
       .animated_line {
         background-color: $back_border_light;
+
         &::before {
           display: none;
         }
