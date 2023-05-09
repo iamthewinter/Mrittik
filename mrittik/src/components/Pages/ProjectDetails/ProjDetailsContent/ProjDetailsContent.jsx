@@ -2,6 +2,11 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import "../ProjDetailsContent/ProjDetailsContent.scss";
+import MainImg1 from "../../../../assets/sl-1.jpg";
+import MainImg2 from "../../../../assets/sl-4.jpg";
+import Related1 from "../../../../assets/related1.jpg";
+import Related2 from "../../../../assets/related2.jpg";
+import Related3 from "../../../../assets/related3.jpg";
 import Fancybox from "../../../FancyBox/FancyBox";
 import FancyImg1 from "../../../../assets/3 (4).jpg";
 import FancyImg2 from "../../../../assets/4 (2).jpg";
@@ -14,10 +19,7 @@ const ProjDetailsContent = () => {
         <div className="row px_5 position-relative">
           <div className="col-xl-8 col-lg-8 col-md-8 px_0">
             <div className="project_image">
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/details/sl-1.jpg"
-                alt=""
-              />
+              <img src={MainImg1} alt="" />
             </div>
             <div className="proj_details_inner">
               <div className="head_text">
@@ -32,10 +34,7 @@ const ProjDetailsContent = () => {
               </div>
             </div>
             <div className="houseside_image">
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/details/sl-4.jpg"
-                alt=""
-              />
+              <img src={MainImg2} alt="" />
             </div>
             <div className="project_features">
               <h6>
@@ -173,10 +172,7 @@ const ProjDetailsContent = () => {
                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                   <div className="simple_card">
                     <div className="card_pic">
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/4.jpg"
-                        alt=""
-                      />
+                      <img src={Related1} alt="" />
                     </div>
                     <div className="card_texts">
                       <h5>
@@ -193,10 +189,7 @@ const ProjDetailsContent = () => {
                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                   <div className="simple_card">
                     <div className="card_pic">
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/2.jpg"
-                        alt=""
-                      />
+                      <img src={Related2} alt="" />
                     </div>
                     <div className="card_texts">
                       <h5>
@@ -214,10 +207,7 @@ const ProjDetailsContent = () => {
                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                   <div className="simple_card">
                     <div className="card_pic">
-                      <img
-                        src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/3.jpg"
-                        alt=""
-                      />
+                      <img src={Related3} alt="" />
                     </div>
                     <div className="card_texts">
                       <h5>
