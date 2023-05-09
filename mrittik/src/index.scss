@@ -112,11 +112,13 @@ body.dark {
                   &:hover {
                     span {
                       color: $text_color_grey2;
+
                       a {
                         color: $text_color_grey2;
                       }
                     }
                   }
+
                   span {
                     color: $text_white;
 
@@ -181,14 +183,17 @@ body.dark {
             &:hover {
               .link_place {
                 color: $text_color_grey2;
+
                 a {
                   color: $text_color_grey2;
                 }
               }
             }
+
             .link_place {
               border-bottom-color: $border_bottom_color;
               color: $text_white;
+
               a {
                 color: $text_white;
                 transition: 0.3s ease-in-out;
@@ -205,20 +210,25 @@ body.dark {
 
           .mobile_li2 {
             border-bottom-color: $border_bottom_color;
+
             &:hover {
               .link_place {
                 color: $text_color_grey2;
+
                 a {
                   color: $text_color_grey2;
                 }
               }
             }
+
             .link_span {
               background-color: $back_btn_color;
             }
+
             .link_place {
               color: $text_white;
               transition: 0.3s ease-in-out;
+
               a {
                 transition: 0.3s ease-in-out;
                 color: $text_white;
@@ -504,26 +514,31 @@ body.dark {
       }
     }
   }
+
   .teamdetails_main {
     .net_lines {
       .animated_line {
         background-color: $back_border_dark;
       }
     }
+
     .memberbio_section {
       .bio_information {
         h3 {
           color: $text_white;
         }
+
         .edu_qualify {
           h6 {
             color: $text_white;
+
             .anim_line {
               &::before {
                 background: $text_color_dark2;
               }
             }
           }
+
           .achieve_points {
             li {
               color: $text_white;
@@ -531,20 +546,27 @@ body.dark {
           }
         }
       }
+
       .their_projects {
         .col_adapt {
           h6 {
             color: $text_white;
+
             .anim_line {
               &::before {
                 background: $text_color_dark2;
               }
             }
           }
+
           .projects_paragraph {
             color: $text_white;
           }
         }
+      }
+
+      .footer_topspace {
+        background-color: $back_border_dark1;
       }
     }
   }

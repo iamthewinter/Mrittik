@@ -1,5 +1,11 @@
 import React from "react";
 import "../MemberBio/MemberBio.scss";
+import MemberBioImg from "../../../../assets/team6.jpg";
+import Work1 from "../../../../assets/work1.jpg";
+import Work2 from "../../../../assets/work2.jpg";
+import Work3 from "../../../../assets/work3.jpg";
+import Work4 from "../../../../assets/work4.jpg";
+import Work5 from "../../../../assets/work5.jpg";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 const MemberBio = () => {
@@ -9,10 +15,7 @@ const MemberBio = () => {
         <div className="row px_5">
           <div className="col-xl-7 col-lg-7 col-md-7 pe-lg-5 pxs_0">
             <div className="bio_image">
-              <img
-                src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/team/6.jpg"
-                alt=""
-              />
+              <img src={MemberBioImg} alt="" />
             </div>
           </div>
           <div className="col-xl-5 col-lg-5 col-md-12 ps-lg-0 pxs_0">
@@ -114,55 +117,51 @@ const MemberBio = () => {
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 plxs_12">
               <div className="project_img">
                 <Link to="/project-details">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/latest/1.jpg"
-                    alt=""
-                  />
+                  <img src={Work1} alt="" />
                 </Link>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 prxs_12">
               <div className="project_img">
                 <Link to="/project-details">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/latest/2.jpg"
-                    alt=""
-                  />
+                  <img src={Work2} alt="" />
                 </Link>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 plxs_12">
               <div className="project_img">
                 <Link to="/project-details">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/latest/3.jpg"
-                    alt=""
-                  />
+                  <img src={Work3} alt="" />
                 </Link>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 prxs_12">
               <div className="project_img">
                 <Link to="/project-details">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/latest/4.jpg"
-                    alt=""
-                  />
+                  <img src={Work4} alt="" />
                 </Link>
               </div>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 plxs_12">
               <div className="project_img">
                 <Link to="/project-details">
-                  <img
-                    src="https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/portfolio/latest/5.jpg"
-                    alt=""
-                  />
+                  <img src={Work5} alt="" />
                 </Link>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="footer_topspace">
+        <ul className="net_lines justify-content-between">
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+          <li className="animated_line"></li>
+        </ul>
       </div>
     </section>
   );

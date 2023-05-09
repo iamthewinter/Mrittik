@@ -1,13 +1,14 @@
 import React from "react";
 import "../TeamDetailHead/TeamDetailHead.scss";
 import { Link } from "react-router-dom";
+import HeaderBG from "../../../../assets/header_bg.jpg";
 const TeamDetailHead = () => {
   return (
     <section className="teamdetail_heading">
       <div
         className="head_back_image"
         style={{
-          backgroundImage: `url("https://wpthemebooster.com/demo/themeforest/html/mrittik/assets/img/header_bg.jpg")`,
+          backgroundImage: `url(${HeaderBG})`,
         }}
       >
         <div className="container px_5">
