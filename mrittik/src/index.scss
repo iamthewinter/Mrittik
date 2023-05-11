@@ -518,8 +518,10 @@ body.dark {
   .error_main {
     .net_lines {
       .animated_line {
-        // background-color: #1c1c1c;
         background-color: $back_border_dark;
+        &:nth-child(1) {
+          background-color: #1c1c1c;
+        }
       }
     }
 
