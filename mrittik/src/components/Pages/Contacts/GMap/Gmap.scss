@@ -1,0 +1,31 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
+.map_section {
+  position: relative;
+  padding: 100px 4.375rem;
+  background-color: $text_color_grey1;
+
+  @media (max-width: 1400px) {
+    padding: 100px calc(1.5625rem + 3.21429vw);
+  }
+
+  .map_box {
+    position: relative;
+    z-index: 2;
+    .mapouter {
+      .gmap_canvas {
+        iframe {
+          width: 1390px;
+          height: 700px;
+          filter: grayscale(100%) invert(92%) contrast(83%);
+
+          @media (max-width: 1400px) {
+            width: 100%;
+            height: calc(5.5rem + 43.71429vw);
+          }
+        }
+      }
+    }
+  }
+}
