@@ -112,11 +112,13 @@ body.dark {
                   &:hover {
                     span {
                       color: $text_color_grey2;
+
                       a {
                         color: $text_color_grey2;
                       }
                     }
                   }
+
                   span {
                     color: $text_white;
 
@@ -181,14 +183,17 @@ body.dark {
             &:hover {
               .link_place {
                 color: $text_color_grey2;
+
                 a {
                   color: $text_color_grey2;
                 }
               }
             }
+
             .link_place {
               border-bottom-color: $border_bottom_color;
               color: $text_white;
+
               a {
                 color: $text_white;
                 transition: 0.3s ease-in-out;
@@ -205,20 +210,25 @@ body.dark {
 
           .mobile_li2 {
             border-bottom-color: $border_bottom_color;
+
             &:hover {
               .link_place {
                 color: $text_color_grey2;
+
                 a {
                   color: $text_color_grey2;
                 }
               }
             }
+
             .link_span {
               background-color: $back_btn_color;
             }
+
             .link_place {
               color: $text_white;
               transition: 0.3s ease-in-out;
+
               a {
                 transition: 0.3s ease-in-out;
                 color: $text_white;
@@ -604,11 +614,13 @@ body.dark {
                   a {
                     color: $text_white;
                     transition: 0.5s ease-in-out;
+
                     &:hover {
                       color: $text_color_grey2;
                     }
                   }
                 }
+
                 h6 {
                   color: $text_color_grey2;
                 }
@@ -618,6 +630,7 @@ body.dark {
         }
       }
     }
+
     .letsdiscuss_section {
       background-color: $back_border_dark1;
 
@@ -635,6 +648,40 @@ body.dark {
             }
           }
         }
+      }
+    }
+  }
+
+  .error_main {
+    .net_lines {
+      .animated_line {
+        background-color: $back_border_dark;
+
+        &:nth-child(1) {
+          background-color: #1c1c1c;
+        }
+      }
+    }
+
+    .errorcontent_section {
+      .error_inner {
+        h2 {
+          color: $text_white;
+        }
+
+        p {
+          color: $text_white;
+        }
+      }
+    }
+
+    .background_pageimg {
+      background-image: url(../src/assets/valentin-muller-bWtd1ZyEy6w-unsplash.jpg);
+      background-position: 50% 40%;
+      filter: grayscale(1);
+
+      &::before {
+        background-color: rgba(0, 0, 0, 0.6);
       }
     }
   }
