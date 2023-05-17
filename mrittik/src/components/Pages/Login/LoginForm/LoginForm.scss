@@ -1,0 +1,230 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
+.loginform_section {
+  padding: 100px 0 0 0;
+  position: relative;
+  z-index: 1;
+
+  .px_5 {
+    padding: 0 3rem;
+
+    @media (max-width: 1400px) {
+      padding: 0 1rem;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 0 0rem;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0 12px;
+    }
+  }
+
+  .col_adapatation {
+    h2 {
+      color: $text_color_dark2;
+      margin-bottom: 1.875rem;
+      position: relative;
+      display: inline-block;
+      font-weight: 600;
+      letter-spacing: 0;
+      font-size: 3rem;
+      line-height: 1.2;
+      padding-bottom: 10px;
+      overflow: hidden;
+      transition: 0.3s ease-in-out;
+
+      @media (max-width: 1400px) {
+        font-size: calc(1.425rem + 1.8vw);
+      }
+
+      .little_line {
+        width: 2.5rem;
+        height: 0.0625rem;
+        background: $text_color_grey2;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 10px;
+          top: 0;
+          width: 4px;
+          height: 1px;
+          background-color: $text_white;
+          transition: 0.3s ease-in-out;
+          animation: lineAnim 1.5s linear infinite;
+        }
+
+        @keyframes lineAnim {
+          0% {
+            left: 0;
+            opacity: 0;
+          }
+
+          10% {
+            opacity: 1;
+          }
+
+          100% {
+            left: 100%;
+          }
+        }
+      }
+    }
+
+    form {
+      .input_group {
+        margin: 10px 0 15px 0;
+        display: inline-block;
+        width: 100%;
+
+        input[type="text"],
+        input[type="password"] {
+          display: block;
+          width: 100%;
+          height: 64px;
+          padding: 10px 40px;
+          font-size: 0.75rem;
+          font-weight: 600;
+          background-color: $back_color1;
+          border: 1px solid $text_color_grey1;
+          color: $text_color_dark1;
+          transition: all 0.5s ease-in-out;
+          line-height: 1.5;
+        }
+
+        input[type="checkbox"] {
+          width: 12px;
+          height: 12px;
+          border: 1px solid #545454;
+          background-color: transparent;
+          border-radius: 0;
+          margin-right: 0.5rem;
+          vertical-align: top;
+          appearance: none;
+          position: relative;
+
+          &::after {
+            position: absolute;
+            display: block;
+            left: 2px;
+            top: 2px;
+            width: 7px;
+            height: 7px;
+            content: "";
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+
+          &:checked {
+            &::after {
+              background-image: url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/ios-checkmark.svg");
+              background-size: 18px 18px;
+              transition: 0.3s ease-in-out;
+            }
+          }
+        }
+
+        label {
+          display: block;
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 1.25rem;
+          color: $text_color_dark2;
+          margin: 0px;
+          transition: 0.3s ease-in-out;
+
+          a {
+            color: $text_color_dark2;
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .btn_group {
+        position: relative;
+        z-index: 1;
+        display: block;
+        margin-bottom: 0.5rem;
+
+        button {
+          background-color: $back_border_dark;
+          color: $text_white;
+          padding: 0.75rem 2.9375rem;
+          position: relative;
+          width: auto;
+          display: inline-block;
+          font-size: 0.75rem;
+          line-height: 1.5rem;
+          font-weight: 700;
+          text-align: center;
+          transition: all 0.5s ease-in-out;
+          border: none;
+          // @media(max-width: 576px){
+          //   padding: 0.75rem calc(1.41875rem + 1.73571vw);
+          // }
+
+          &:hover {
+            background-color: #2e2e2e99;
+
+            &::before {
+              top: 0;
+              left: 0;
+            }
+          }
+
+          &::before {
+            background-image: url(../../../../assets/btn-texture-gray.png);
+            content: "";
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 9px;
+            left: 9px;
+            border: 1px solid $back_border_dark;
+            z-index: -1;
+            transition: left 0.3s ease-out 0.3s, top 0.3s ease-out 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  .space_separator {
+    height: 70px;
+    background-color: $text_white;
+    margin-top: 100px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+
+    @media (max-width: 1400px) {
+      height: calc(1.5625rem + 3.21429vw);
+    }
+
+    @extend %grid_animation;
+
+    .net_lines {
+      padding: 0 8.9375rem;
+
+      @media (max-width: 1400px) {
+        padding: 0 calc(2.01875rem + 7.90714vw);
+      }
+
+      .animated_line {
+        background-color: $back_border_light;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
