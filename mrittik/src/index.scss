@@ -814,6 +814,47 @@ body.dark {
       }
     }
   }
+
+  .team_main {
+    .net_lines {
+      .animated_line {
+        background-color: $back_border_dark;
+      }
+    }
+
+    .ourteam_section {
+      .max_width970 {
+        .section_heading {
+          h2 {
+            color: $text_white;
+          }
+        }
+
+        .team_members {
+          .member_box {
+            h5 {
+              a {
+                color: $text_white;
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+                  color: $text_color_grey2;
+                }
+              }
+            }
+
+            h6 {
+              color: $text_color_grey2;
+            }
+          }
+        }
+      }
+
+      .footer_upspace {
+        background-color: $back_border_dark1;
+      }
+    }
+  }
 }
 
 code {
