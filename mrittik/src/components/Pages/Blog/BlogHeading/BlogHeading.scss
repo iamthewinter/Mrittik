@@ -1,0 +1,129 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
+.blogpage_heading {
+  position: relative;
+  padding-top: 140px;
+  z-index: 1;
+
+  .head_back_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @media (max-width: 420px) {
+      background-position: right;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .px_5 {
+      padding: 0 3rem;
+
+      @media (max-width: 1400px) {
+        padding: 0 1rem;
+      }
+
+      @media (max-width: 1200px) {
+        padding: 0 0rem;
+      }
+
+      @media (max-width: 576px) {
+        padding: 0 14px;
+      }
+    }
+
+    .col_xs_6 {
+      @media (max-width: 576px) {
+        width: 50%;
+      }
+
+      @media (max-width: 420px) {
+        width: 100%;
+      }
+    }
+
+    .left_head {
+      padding: 60px 0;
+      position: relative;
+
+      @media (max-width: 420px) {
+        padding: 60px 0 10px 0;
+      }
+
+      h2 {
+        line-height: 3.75rem;
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: $text_white;
+
+        @media (max-width: 1400px) {
+          font-size: calc(1.425rem + 1.8vw);
+          line-height: calc(1.5rem + 2.57143vw);
+        }
+      }
+    }
+
+    .page_location {
+      display: flex;
+      justify-content: flex-end;
+      padding: 60px 0;
+      position: relative;
+      margin-bottom: 0;
+
+      @media (max-width: 420px) {
+        justify-content: flex-start;
+        padding: 10px 0 60px 0;
+      }
+
+      li {
+        padding-right: 1.5625rem;
+        line-height: 1.625rem;
+        display: inline-block;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $text_white;
+
+        &:last-child {
+          color: $text_color_grey2;
+          padding-right: 0;
+        }
+
+        a {
+          position: relative;
+          color: $text_white;
+          padding-right: 0.9375rem;
+          transition: 0.5s ease-in-out;
+
+          &:hover {
+            color: $text_color_grey2;
+          }
+
+          &::after {
+            content: "\203A";
+            position: absolute;
+            font-family: "Yeseva One", cursive;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 100%;
+            font-size: 20px;
+            display: flex;
+            font-weight: 300;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

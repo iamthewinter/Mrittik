@@ -1,0 +1,340 @@
+@import "../../../../Scss/variable";
+@import "../../../../Scss/mixin";
+
+.ourblogs_section {
+  padding: 100px 0 0;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+
+  @media (max-width: 1400px) {
+    padding: calc(2.3125rem + 10.92857vw) 0 0px;
+  }
+
+  .big_back_word {
+    position: absolute;
+    top: 85px;
+    width: 100%;
+
+    h2 {
+      color: $text_color_grey1;
+      line-height: 13.5rem;
+      font-size: 15rem;
+      letter-spacing: 1.25rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+      margin-bottom: 0;
+      transition: 0.3s ease-in-out;
+
+      @media (max-width: 1400px) {
+        font-size: calc(2.625rem + 14.14286vw);
+        line-height: calc(2.475rem + 12.6vw);
+      }
+    }
+  }
+
+  .px_5 {
+    padding: 0 3.6rem;
+    margin: 0.1rem;
+
+    @media (max-width: 1400px) {
+      padding: 0;
+      margin: 0;
+    }
+
+    @media (max-width: 1200px) {
+      padding: 0 0rem;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0px;
+    }
+  }
+
+  .margins {
+    max-width: 56.25rem;
+    margin: 0rem auto 3.75rem;
+
+    @media (max-width: 576px) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .central_texts {
+    position: relative;
+    text-align: center;
+
+    &::before {
+      height: 3.75rem;
+      content: "";
+      position: absolute;
+      left: calc(50% - 1px);
+      bottom: calc(100% + 25px);
+      width: 2px;
+      background: $text_color_grey3;
+
+      @media (max-width: 1400px) {
+        height: calc(1.5rem + 2.57143vw);
+      }
+
+      @media (max-width: 768px) {
+        width: 1px;
+      }
+    }
+
+    h2 {
+      color: $text_color_dark1;
+      font-size: 3rem;
+      letter-spacing: 0.1875rem;
+      font-weight: 700;
+      margin-bottom: 0;
+      line-height: 1.2;
+      margin-bottom: 35px;
+
+      @media (max-width: 1400px) {
+        font-size: calc(1.425rem + 1.8vw);
+      }
+    }
+  }
+
+  .px_4 {
+    padding: 0 1.5rem;
+
+    @media (max-width: 1400px) {
+      padding: 0;
+    }
+  }
+
+  .px_12 {
+    margin-bottom: 30px;
+
+    @media (max-width: 576px) {
+      padding: 0;
+    }
+  }
+
+  .blog_post {
+    position: relative;
+    overflow: hidden;
+    height: 468px;
+    transition: all 0.5s ease-in-out;
+
+    @media (max-width: 1400px) {
+      height: 488px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 0px;
+    }
+
+    &:hover {
+      img {
+        opacity: 1;
+      }
+
+      .blog_content {
+        &::before {
+          background: #000000bf;
+        }
+
+        h2 {
+          font-size: 4.5rem;
+          line-height: 4.875rem;
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        .dates {
+          .post_time {
+            color: $text_color_grey2;
+          }
+        }
+
+        h5 {
+          a {
+            color: $text_white;
+          }
+        }
+
+        p {
+          color: $text_white;
+        }
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: all 0.5s ease;
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .blog_content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding: 20px 30px 40px 45px;
+      z-index: 1;
+      transition: all 0.5s ease-in-out;
+
+      &::before {
+        content: "";
+        background: #00000000;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: all 0.5s ease-in-out;
+      }
+
+      h2 {
+        font-size: 0.125rem;
+        line-height: 0.5rem;
+        font-weight: 700;
+        transition: all 0.5s ease;
+        transform: translateY(10px);
+        opacity: 0;
+        color: #ffffff4d;
+        margin-bottom: 0;
+      }
+
+      .dates {
+        margin: 10px 0;
+
+        .post_time {
+          font-size: 0.75rem;
+          line-height: 1.375rem;
+          font-weight: 600;
+          color: $text_color_dark3;
+          transition: all 0.5s ease;
+        }
+      }
+
+      h5 {
+        margin-bottom: 1.5625rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.2;
+
+        a {
+          font-size: 1.25rem;
+          line-height: 1.625rem;
+          color: $text_color_dark1;
+          transition: all 0.5s ease;
+        }
+      }
+
+      p {
+        color: $text_color_dark1;
+        font-size: 1rem;
+        margin-bottom: 25px;
+        line-height: 26px;
+        font-weight: 400;
+        transition: all 0.5s ease;
+      }
+
+      .details_link {
+        cursor: pointer;
+
+        a {
+          .details_text {
+            color: $text_color_grey2;
+            font-size: 11px;
+            margin-right: 1.875rem;
+            font-weight: 600;
+          }
+
+          @extend %link_animation;
+
+          &:hover {
+            @extend %link_animation_hover;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination_div {
+    width: 100%;
+    margin-top: 30px;
+
+    ul {
+      margin-bottom: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li {
+        margin-right: 10px;
+
+        a {
+          color: $text_color_dark2;
+          font-size: 0.9375rem;
+          text-align: center;
+          width: 26px;
+          height: 26px;
+          line-height: 26px;
+          display: block;
+          border-radius: 50%;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            background-color: $text_color_grey2;
+            color: $text_white;
+          }
+        }
+
+        .current_page {
+          background-color: $text_color_grey2;
+          color: $text_white;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .separating_footerspace {
+    height: 70px;
+    margin-top: 100px;
+    position: relative;
+    background-color: $text_white;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+
+    @media (max-width: 1400px) {
+      height: calc(1.5625rem + 3.21429vw);
+    }
+
+    @media (max-width: 1200px) {
+      margin-top: 70px;
+    }
+
+    @extend %grid_animation;
+
+    .net_lines {
+      padding: 0 8.9375rem;
+
+      @media (max-width: 1400px) {
+        padding: 0 calc(2.01875rem + 7.90714vw);
+      }
+
+      .animated_line {
+        background-color: $back_border_light;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}

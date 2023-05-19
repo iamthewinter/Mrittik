@@ -855,6 +855,78 @@ body.dark {
       }
     }
   }
+  .blog_main {
+    .net_lines {
+      .animated_line {
+        background-color: $back_border_dark;
+      }
+    }
+
+    .ourblogs_section {
+      .big_back_word {
+        h2 {
+          color: $back_border_dark1;
+        }
+      }
+
+      .central_texts {
+        h2 {
+          color: $text_white;
+        }
+      }
+
+      .blog_post {
+        &:hover {
+          .blog_content {
+            p {
+              color: $text_white;
+            }
+          }
+        }
+
+        .blog_content {
+          .dates {
+            .post_time {
+              color: $text_color_grey2;
+            }
+          }
+
+          h5 {
+            a {
+              color: $text_white;
+            }
+          }
+
+          p {
+            color: $text_color_grey3;
+          }
+        }
+      }
+
+      .pagination_div {
+        ul {
+          li {
+            a {
+              color: $text_white;
+
+              &:hover {
+                color: $text_color_grey2;
+                background-color: $back_border_dark;
+              }
+            }
+
+            .current_page {
+              color: $text_color_grey2;
+              background-color: $back_border_dark;
+            }
+          }
+        }
+      }
+      .separating_footerspace {
+        background-color: $back_border_dark1;
+      }
+    }
+  }
 }
 
 code {
