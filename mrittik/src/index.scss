@@ -855,6 +855,7 @@ body.dark {
       }
     }
   }
+
   .blog_main {
     .net_lines {
       .animated_line {
@@ -922,17 +923,20 @@ body.dark {
           }
         }
       }
+
       .separating_footerspace {
         background-color: $back_border_dark1;
       }
     }
   }
+
   .projects_main {
     .net_lines {
       .animated_line {
         background-color: $back_border_dark;
       }
     }
+
     .projectsfilter_section {
       .isotope_btns {
         border-bottom: 0.0625rem solid $text_color_dark3;
@@ -953,6 +957,7 @@ body.dark {
           color: $text_color_grey2;
         }
       }
+
       .filter_image {
         .works_info {
           background-color: $text_color_dark2;
@@ -978,8 +983,144 @@ body.dark {
           }
         }
       }
+
       .footer_topspace {
         background-color: $back_border_dark1;
+      }
+    }
+  }
+
+  .projdetails_main {
+    .projdetails_heading {
+      .net_lines {
+        .animated_line {
+          background-color: $back_border_dark;
+        }
+      }
+    }
+
+    .projdetailsinner_section {
+      background-color: $back_border_dark1;
+
+      .fixed_col {
+        background-color: $back_color_sticky;
+
+        .pojects_info {
+          h6 {
+            color: $text_white;
+
+            .anim_line {
+              &::before {
+                background-color: $back_color_sticky;
+              }
+            }
+          }
+
+          ul {
+            li {
+              .data {
+                color: $text_white;
+              }
+
+              .value {
+                color: $text_color_grey4;
+              }
+            }
+          }
+
+          .project_share {
+            ul {
+              li {
+                color: $text_white;
+
+                a {
+                  background-color: $backforicons;
+                  color: $text_white;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .proj_details_inner {
+        .head_text {
+          h3 {
+            color: $text_white;
+          }
+
+          p {
+            color: $text_color_grey3;
+          }
+        }
+      }
+
+      .project_features {
+        h6 {
+          color: $text_white;
+
+          span {
+            &::before {
+              background-color: $back_border_dark1;
+            }
+          }
+        }
+
+        p {
+          color: $text_color_grey3;
+        }
+      }
+
+      .points_list {
+        li {
+          color: $text_color_grey3;
+        }
+      }
+
+      .last_texts {
+        p {
+          color: $text_color_grey3;
+        }
+      }
+
+      .post_end {
+        border-top-color: $back_border_dark;
+      }
+
+      .related_projects {
+        h6 {
+          color: $text_white;
+
+          .anim_line {
+            &::before {
+              background-color: $back_border_dark1;
+            }
+          }
+        }
+
+        .simple_card {
+          .card_texts {
+            h5 {
+              a {
+                color: $text_white;
+
+                &:hover {
+                  color: $text_color_grey2;
+                }
+              }
+            }
+
+            h6 {
+              a {
+                color: $text_color_grey3;
+
+                &:hover {
+                  color: $text_white;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
