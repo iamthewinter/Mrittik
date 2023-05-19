@@ -250,6 +250,23 @@ body.dark {
     }
   }
 
+  #darkmode {
+    .mode_switch {
+      span {
+        .moon_svgicon {
+          visibility: visible;
+          opacity: 1;
+          transform: translateY(0%);
+        }
+        .sun_svgicon {
+          transform: translateY(-100%);
+          visibility: hidden;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
   .topbtn {
     color: $text_color_grey2;
   }
