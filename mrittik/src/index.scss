@@ -927,6 +927,62 @@ body.dark {
       }
     }
   }
+  .projects_main {
+    .net_lines {
+      .animated_line {
+        background-color: $back_border_dark;
+      }
+    }
+    .projectsfilter_section {
+      .isotope_btns {
+        border-bottom: 0.0625rem solid $text_color_dark3;
+
+        button {
+          color: $text_white;
+
+          &:hover {
+            color: $text_color_grey2;
+          }
+
+          sup {
+            color: $text_white;
+          }
+        }
+
+        .activefilter {
+          color: $text_color_grey2;
+        }
+      }
+      .filter_image {
+        .works_info {
+          background-color: $text_color_dark2;
+
+          .banner_texts {
+            h6 {
+              color: $text_color_grey2;
+
+              a {
+                color: $text_color_grey2;
+              }
+            }
+
+            h5 {
+              a {
+                color: $text_white;
+
+                &:hover {
+                  color: $text_color_grey2;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer_topspace {
+        background-color: $back_border_dark1;
+      }
+    }
+  }
 }
 
 code {
