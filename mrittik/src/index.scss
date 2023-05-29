@@ -273,14 +273,9 @@ body.dark {
 
   .first_section {
     background-color: $text_color_dark1;
-
-    .section_under {
-      .col_adaptation {
-        border-right-color: $back_border_dark;
-      }
-
-      .brdr_left {
-        border-left-color: $back_border_dark;
+    .net_lines {
+      .animated_line {
+        background-color: $back_border_dark;
       }
     }
 

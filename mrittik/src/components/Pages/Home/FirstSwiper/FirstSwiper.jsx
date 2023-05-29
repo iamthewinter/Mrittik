@@ -29,30 +29,15 @@ const FirstSwiper = () => {
   };
   return (
     <section className="first_section">
-      <div className="section_under">
-        <div className="container h-100 px-4">
-          <div className="row h-100 px-4">
-            <div className="col-xl-2 col-lg-2 col-md-2 px-0">
-              <div className="col_adaptation brdr_left"></div>
-            </div>
-            <div className="col-xl-2 col-lg-2 col-md-2 px-0">
-              <div className="col_adaptation"></div>
-            </div>
-            <div className="col-xl-2 col-lg-2 col-md-2 px-0">
-              <div className="col_adaptation"></div>
-            </div>
-            <div className="col-xl-2 col-lg-2 col-md-2 px-0">
-              <div className="col_adaptation"></div>
-            </div>
-            <div className="col-xl-2 col-lg-2 col-md-2 px-0">
-              <div className="col_adaptation"></div>
-            </div>
-            <div className="col-xl-2 col-lg-2 col-md-2 px-0">
-              <div className="col_adaptation"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ul className="net_lines justify-content-between">
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+        <li className="animated_line"></li>
+      </ul>
       <div className="section_on">
         <div className="container px_5">
           <div className="row px_5">
